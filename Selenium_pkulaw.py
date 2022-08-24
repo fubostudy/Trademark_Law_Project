@@ -276,9 +276,6 @@ class qjh(object):
 
         # 登录
         self.Login_ip('293474','2000825b')
-        # self.Login_association('sz833298','sz@833298')
-        # self.Login_association('sz065955','sz@065955')
-        # self.Login_association('sz017654','sz@017654')
 
         # 所在年份小于2000篇，不需要循环下载
         # self.get_year2022_2013()
