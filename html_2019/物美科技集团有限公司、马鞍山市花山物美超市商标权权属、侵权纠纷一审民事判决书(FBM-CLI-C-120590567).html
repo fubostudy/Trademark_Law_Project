@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+html{margin:0;padding:0;border:0}body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,caption,tbody,tfoot,thead,article,aside,dialog,figure,footer,header,hgroup,nav,section{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}ol,ul,li{list-style:none}body{background:white;font-family:'Microsoft Yahei', Arial, Helvetica, sans-serif}table,tr,th,td{border-collapse:collapse;margin:0;padding:0;font-size:100%;vertical-align:baseline}caption,th,td{text-align:left;font-weight:normal;float:none !important}table,th,td,select,img,input,object{vertical-align:middle;font-family:'Microsoft Yahei','黑体', Arial, Helvetica, sans-serif}:focus{outline:0}input,select{margin:0;padding:0}a{color:#333;text-decoration:none}a:hover{text-decoration:underline}img{border:none;vertical-align:top}textarea{resize:none;border:1px solid #ccc}textarea:hover{border-color:#ccc}input[type="text"],input[type="button"]{-webkit-appearance:none;border-radius:0;font-family:'Microsoft Yahei','黑体', Arial, Helvetica, sans-serif}input::-ms-clear{display:none}input[type="text"]{border:solid 1px #ccc;border-radius:0}dfn{font-style:normal;font-family:Arial}body{overflow-x:hidden;background-color:#eee !important;background-image:none}.container{min-width:900px;max-width:1200px;padding:0 50px;margin-left:auto;margin-right:auto}.c-icon{font-size:0;line-height:0;display:inline-block;*display:inline;zoom:1;background:url(https://resources.pkulaw.cn/V6-Static/images/icon.png?20210309) no-repeat}.fl{float:left}.fr{float:right}.fulltext-wrap .fulltext h4,.fulltext-wrap .fulltext p.tiao em{color:#333}.hitClass{color:#f72e2e}.fulltext-wrap .title .now-valid,.fulltext-wrap .title .part-in-vain,.fulltext-wrap .title .all-in-vain,.fulltext-wrap .title .modification,.fulltext-wrap .title .havent-valid,.fulltext-wrap .title .caramel,.fulltext-wrap .title .star-1,.fulltext-wrap .title .star-2,.fulltext-wrap .title .star-3,.fulltext-wrap .title .star-4,.fulltext-wrap .title .star-5,.fulltext-wrap .title .star-6,.fulltext-wrap .title .star-7,.fulltext-wrap .title .star-8,.fulltext-wrap .title .star-9,.fulltext-wrap .title .star-10,.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page a,.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .page a{font-size:12px;padding:3px 10px;display:inline-block;*display:inline;zoom:1}.arrow-blue-right-s,.arrow-blue-left-s,.arrow-blue-up-s,.arrow-blue-down-s{width:3px;height:5px}.arrow-blue-right-s{background-position:-240px -48px}.arrow-blue-left-s{background-position:-224px -48px}.arrow-blue-up-s{background-position:-208px -48px}.arrow-blue-down-s{background-position:-192px -48px}.arrow-white-right,.arrow-white-left,.arrow-white-up,.arrow-white-down{width:7px;height:7px}.arrow-white-right{background-position:-176px -48px}.arrow-white-left{background-position:-160px -48px}.arrow-white-up{background-position:-144px -48px}.arrow-white-down{background-position:-128px -48px}.arrow-right,.arrow-left,.arrow-up,.arrow-down{width:7px;height:7px}.arrow-right{background-position:-112px -48px}.arrow-left{background-position:-96px -48px}.arrow-up{background-position:-80px -48px}.arrow-down{background-position:-64px -48px}.arrow-line-right,.arrow-line-left,.arrow-line-up,.arrow-line-down{width:11px;height:11px}.arrow-line-right{background-position:-48px -48px}.arrow-line-left{background-position:-32px -48px}.arrow-line-up{background-position:-16px -48px}.arrow-line-down{background-position:-0px -48px}.arrow-line-gray-right,.arrow-line-gray-left,.arrow-line-gray-up,.arrow-line-gray-down{width:11px;height:11px}.arrow-line-gray-right{background-position:-48px -60px}.arrow-line-gray-left{background-position:-32px -60px}.arrow-line-gray-up{background-position:-16px -60px}.arrow-line-gray-down{background-position:-0px -60px}.c-download{width:13px;height:11px;background-position:-200px -72px}a:hover .c-download,.current .c-download{background-position:-224px -72px}.star-0,.star-1,.star-2,.star-3,.star-4,.star-5{width:78px;height:13px}.star-0{background-position:-80px -104px}.star-1{background-position:-64px -104px}.star-2{background-position:-48px -104px}.star-3{background-position:-32px -104px}.star-4{background-position:-16px -104px}.star-5{background-position:0 -104px}.round-line{width:8px;height:8px;background-position:-0px -72px}.c-round{width:5px;height:5px;background-position:-168px -88px;margin-right:10px;position:relative;top:-2px}.c-add-s{width:11px;height:11px}.c-user-s{width:17px;height:17px;background-position:-208px 0;margin-right:5px;position:relative;top:4px}.c-user{width:17px;height:18px;background-position:0 -312px}.c-password{width:17px;height:18px;background-position:-32px -312px}.c-succeed-s{width:15px;height:11px;background-position:-304px -192px}.c-succeed-b{width:46px;height:46px;background-position:-336px -192px}.currenthit{color:#fff;background:#f72e2e}.tips-r{position:absolute;width:185px;border:none;padding:0;padding-left:9px;height:auto}.tips-r .c-arrow{width:10px;height:17px;background-position:-100px -452px;position:absolute;left:0px;top:30px;opacity:.7;filter:alpha(opacity=70)}.tips-r .t-wrap{border:1px solid #d6d6d6;border-radius:3px;padding:10px;width:auto;height:auto;background:#fff}.tips-r .t-wrap h6{margin-bottom:10px;font-size:12px;color:#333;font-weight:normal}.tips-r .t-wrap ul li{position:relative;padding-left:20px}.tips-r .t-wrap ul li .c-icon{width:14px;height:14px;position:absolute;left:0;top:5px}.tips-r .t-wrap ul li .c-icon.c-succeed{background-position:-512px -452px}.tips-r .t-wrap ul li .c-icon.c-warning{background-position:-486px -452px}.tips-r .t-wrap ul li p{height:auto;color:#666}.bg-white .fulltext-wrap{background:#fff}.bg-orange .fulltext-wrap{background:#faf0e7}.bg-green .fulltext-wrap{background:#ddeee3}.bg-blue .fulltext-wrap{background:#e2edf2}.fulltext-wrap{background:#fff;padding:25px;min-height:600px}.fulltext-wrap>.t-standard{position:relative;padding-bottom:10px;border-bottom:1px solid #82b5d7;margin-bottom:10px}.fulltext-wrap>.t-standard h4{font-size:18px;font-weight:700;color:#333;padding-left:5px;border-left:5px solid #224e6b;display:inline-block;*display:inline;*zoom:1}.fulltext-wrap>.t-standard .download{position:absolute;right:0;top:0;line-height:26px;border:1px solid #218fc4;padding:0 15px;border-radius:4px;font-size:14px;color:#333}.fulltext-wrap>.t-standard .download:hover{text-decoration:none;color:#218fc4}.fulltext-wrap .purchase{position:fixed;width:25px;text-align:center}.fulltext-wrap .purchase a{display:block;font-size:12px;color:#fff;background:#218fc4;padding:5px}.fulltext-wrap.fulltext-wrap-j .fields{padding:0 20px;line-height:36px}.fulltext-wrap.fulltext-wrap-j .fulltext{font-size:14px;color:#747474;line-height:160%}.fulltext-wrap .edit-fulltext{position:relative}.fulltext-wrap .edit-fulltext>a{color:#fff;background:#218fc4;padding:3px 10px;position:absolute;right:0;top:0}.fulltext-wrap .edit-fulltext .btn{position:absolute;right:0;top:0}.fulltext-wrap .edit-fulltext .btn a{font-size:14px;color:#fff;background:#218fc4;padding:3px 10px}.fulltext-wrap .edit-fulltext .btn a.orange{background:#ef983a}.fulltext-wrap .edit-fulltext .btn a.blue-light{background:#4bbcde}.fulltext-wrap .edit-fulltext-btn{margin-bottom:20px}.fulltext-wrap .edit-fulltext-btn a{color:#fff;background:#218fc4;padding:3px 10px}.fulltext-wrap .title{font-size:20px;text-align:center;margin-bottom:15px;position:relative}.fulltext-wrap .title a{font-size:16px;font-weight:normal;color:#218fc4;margin-left:10px;display:inline-block;*display:inline;*zoom:1}.fulltext-wrap .title .link{font-size:14px;font-weight:normal;color:#218fc4;margin-left:10px;padding:0;margin-bottom:0;line-height:auto;height:auto;display:inline-block;*display:inline;*zoom:1;letter-spacing:0}.fulltext-wrap .title .link .c-return{width:14px;height:12px;background-position:-776px -160px;margin-right:3px}.fulltext-wrap .title .voice{width:14px;height:11px;background:url(https://resources.pkulaw.cn/V6-Static/images/voice.png?20210309) no-repeat;display:inline-block;*display:inline;*zoom:1;vertical-align:middle;margin:0 5px}.fulltext-wrap .title .voice.current{background:url(https://resources.pkulaw.cn/V6-Static/images/voice.gif?20210309) no-repeat}.fulltext-wrap .title .watermark{position:absolute;left:0;top:30px;width:130px;height:48px;background:url(https://resources.pkulaw.cn/V6-Static/images/watermark.png?20210309) no-repeat}.fulltext-wrap .title .now-valid{color:#fff;background:#7cc943;margin-left:10px;cursor:text}.fulltext-wrap .title .now-valid:hover{color:#fff;text-decoration:none}.fulltext-wrap .title .part-in-vain{color:#fff;background:#a3a3a3;margin-left:10px;cursor:text}.fulltext-wrap .title .part-in-vain:hover{color:#fff;text-decoration:none}.fulltext-wrap .title .all-in-vain{color:#fff;background:#cbcbcb;margin-left:10px;cursor:text}.fulltext-wrap .title .all-in-vain:hover{color:#fff;text-decoration:none}.fulltext-wrap .title .modification{color:#fff;background:#7cc943;margin-left:10px;cursor:text}.fulltext-wrap .title .modification:hover{color:#fff;text-decoration:none}.fulltext-wrap .title .havent-valid{color:#fff;background:#deb925;margin-left:10px;cursor:text}.fulltext-wrap .title .havent-valid:hover{color:#fff;text-decoration:none}.fulltext-wrap .title .caramel{color:#fff;background:#83bbd6;margin-left:10px;cursor:text}.fulltext-wrap .title .caramel:hover{color:#fff;text-decoration:none}.fulltext-wrap .title .star-1{height:16px;width:auto;color:#fff;background:#de4a26}.fulltext-wrap .title .star-2{height:16px;width:auto;color:#fff;background:#e25d3e}.fulltext-wrap .title .star-3{height:16px;width:auto;color:#fff;background:#e87057}.fulltext-wrap .title .star-4{height:16px;width:auto;color:#fff;background:#eb826c}.fulltext-wrap .title .star-5{height:16px;width:auto;color:#fff;background:#ef9481}.fulltext-wrap .title .star-6{height:16px;width:auto;color:#fff;background:#f2a696}.fulltext-wrap .title .star-7{height:16px;width:auto;color:#fff;background:#f4b9ab}.fulltext-wrap .title .star-8{height:16px;width:auto;color:#fff;background:#f5c8bd}.fulltext-wrap .title .star-9{height:16px;width:auto;color:#fff;background:#f8dbd4}.fulltext-wrap .title .star-10{height:16px;width:auto;color:#fff;background:#fcede9}.fulltext-wrap .sub-title{font-size:16px;color:#333;font-weight:normal;text-align:center;display:block;width:100%}.fulltext-wrap .sub-title span{margin-right:5px}.fulltext-wrap .user-info{text-align:center}.fulltext-wrap .user-info strong{font-weight:normal;margin-right:20px}.fulltext-wrap .user-info span{color:#666}.fulltext-wrap .info{text-align:center;border-bottom:3px solid #b6c6cd;padding-bottom:15px;margin-bottom:10px;position:relative}.fulltext-wrap .info.journal{text-align:right}.fulltext-wrap .info span{display:inline-block;*display:inline;*zoom:1;margin-right:20px}.share{display:inline-block;*display:inline;*zoom:1;vertical-align:middle}.share span{float:left}.fulltext-wrap .info .statement{font-size:12px;color:#999;border:1px solid #999;line-height:20px;padding:0 5px;position:absolute;right:0;top:5px}.fulltext-wrap .print-btn{text-align:right;margin-bottom:20px}.fulltext-wrap .print-btn a{font-size:14px;color:#218fc4;border:1px solid #218fc4;padding:2px 10px}.fulltext-wrap .btn-list{text-align:right;padding-bottom:10px}.fulltext-wrap .btn-list a{font-size:12px;color:#218fc4;text-align:center;padding:0 10px;line-height:24px;border:1px solid #218fc4;display:inline-block;*display:inline;*zoom:1}.fulltext-wrap .btn-list a .c-icon{width:14px;height:14px;margin-right:5px;position:relative;top:3px}.fulltext-wrap .btn-list a .c-icon.c-report{width:16px;height:16px;background-position:-776px -72px}.fulltext-wrap .btn-list a .c-icon.c-report-off{width:16px;height:16px;background-position:-776px -104px}.fulltext-wrap .btn-list a .c-icon.c-contrast{width:16px;height:16px;background-position:-710px -160px}.fulltext-wrap .btn-list a .c-icon.c-contrast-selected{width:16px;height:16px;background-position:-732px -160px}.fulltext-wrap .btn-list a .c-icon.c-history{background-position:0 -472px}.fulltext-wrap .btn-list a .c-icon.c-original{background-position:-20px -472px}.fulltext-wrap .btn-list a .c-icon.c-case{background-position:-40px -472px}.fulltext-wrap .btn-list a:hover,.fulltext-wrap .btn-list a.current{color:#fff;border:1px solid #218fc4;background:#218fc4;text-decoration:none}.fulltext-wrap .btn-list a:hover .c-icon.c-report,.fulltext-wrap .btn-list a.current .c-icon.c-report{background-position:-776px -88px}.fulltext-wrap .btn-list a:hover .c-icon.c-report-off,.fulltext-wrap .btn-list a.current .c-icon.c-report-off{background-position:-776px -120px}.fulltext-wrap .btn-list a:hover .c-icon.c-contrast,.fulltext-wrap .btn-list a.current .c-icon.c-contrast{background-position:-710px -192px}.fulltext-wrap .btn-list a:hover .c-icon.c-contrast-selected,.fulltext-wrap .btn-list a.current .c-icon.c-contrast-selected{background-position:-732px -192px}.fulltext-wrap .btn-list a:hover .c-icon.c-history,.fulltext-wrap .btn-list a.current .c-icon.c-history{background-position:0 -452px}.fulltext-wrap .btn-list a:hover .c-icon.c-original,.fulltext-wrap .btn-list a.current .c-icon.c-original{background-position:-20px -452px}.fulltext-wrap .btn-list a:hover .c-icon.c-case,.fulltext-wrap .btn-list a.current .c-icon.c-case{background-position:-40px -452px}.fulltext-wrap .editor-note{padding-top:0px}.fulltext-wrap .editor-note a{font-size:14px;color:#218fc4;margin-right:10px;line-height:160%;margin-bottom:3px;display:inline-block;*display:inline;*zoom:1}.fulltext-wrap .editor-note a.c-help{width:14px;height:14px;background-position:-512px -104px;top:5px}.fulltext-wrap .editor-note .c-icon{width:14px;height:14px;margin-right:5px;position:relative;top:1px}.fulltext-wrap .editor-note .c-fabao{background-position:-556px -48px}.fulltext-wrap .editor-note .c-edit{background-position:-578px -48px}.fulltext-wrap .editor-note .c-contrast{background-position:-600px -48px}.fulltext-wrap .editor-note .c-mfd{background-position:-710px -48px}.fulltext-wrap .field-wrap{margin-bottom:20px}.fulltext-wrap .field-wrap .fields-height{height:82px;overflow:hidden}.fulltext-wrap .field-wrap .fields{margin-bottom:0;margin-top:10px}.fulltext-wrap .field-wrap .fields.margin-none{margin-top:0}.fulltext-wrap .field-wrap .more-fields{text-align:center}.fulltext-wrap .field-wrap .more-fields a{font-size:12px;padding:0 20px;line-height:30px;display:inline-block;*display:inline;*zoom:1;background:#f7f7f7;position:relative;top:0px}.fulltext-wrap .field-wrap .more-fields a .c-icon{margin-right:5px}.fulltext-wrap .fields{background:#f7f7f7;margin-bottom:20px;padding:20px}.fulltext-wrap .fields .navzhang,.fulltext-wrap .fields .zhang{margin:0}.fulltext-wrap .fields ul{letter-spacing:-12px}.fulltext-wrap .fields ul li{letter-spacing:0;font-size:14px;color:#999;width:50%;display:inline-block;*display:inline;*zoom:1;vertical-align:top;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;margin-bottom:10px;position:relative}.fulltext-wrap .fields ul li.only-one .box{padding-left:0}.fulltext-wrap .fields ul li.only-one .box strong{position:static;width:auto;position:relative;top:3px}.fulltext-wrap .fields ul li .box{padding-left:130px;margin:0 5px;position:relative}.fulltext-wrap .fields ul li .box strong{font-weight:normal;color:#999;text-align:left;display:inline-block;*display:inline;*zoom:1;width:130px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;position:absolute;left:0}.fulltext-wrap .fields ul li a,.fulltext-wrap .fields ul li span{margin-right:10px}.fulltext-wrap .fields ul li a.hitClass,.fulltext-wrap .fields ul li span.hitClass{margin-right:0}.fulltext-wrap .fields ul li a.currenthit,.fulltext-wrap .fields ul li span.currenthit{margin-right:0}.fulltext-wrap .fields ul li a{color:#218fc4}.fulltext-wrap .fields ul li .percent a{color:#999}.fulltext-wrap .fields ul li .orange{background:#fe9835;border-radius:3px;padding:0 10px;line-height:22px;display:inline-block;*display:inline;*zoom:1;font-size:14px;font-weight:normal;color:#fff}.fulltext-wrap .fields ul li .orange:hover{text-decoration:none}.fulltext-wrap .fields ul li .organization{background:#218fc4;color:#fff;padding:2px 10px;cursor:pointer;display:inline-block;*display:inline;*zoom:1}.fulltext-wrap .fields ul li .label-1{font-size:14px;color:#fe9835;display:inline-block;*display:inline;*zoom:1;line-height:22px;padding:0 10px;border-radius:3px;background:#fff3e7;margin-right:10px}.fulltext-wrap .fields ul li .label-1 .c-icon{width:15px;height:14px;vertical-align:middle;margin-right:5px}.fulltext-wrap .fields ul li .label-1 .c-icon.c-label-1{background-position:-798px -192px}.fulltext-wrap .fields ul li .label-1 .c-icon.c-label-2{background-position:-820px -192px}.fulltext-wrap .fields ul li .annotation{font-size:12px;background:#65beea;color:#fff;padding:0 3px;margin-left:5px;border-radius:2px;cursor:pointer;height:14px;line-height:14px;display:inline-block;*display:inline;*zoom:1}.fulltext-wrap .fields ul li strong{font-weight:normal;color:#999;text-align:left;display:inline-block;*display:inline;*zoom:1;width:130px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;position:absolute;left:0}.fulltext-wrap .fields ul li .tianyan-tips{font-size:12px;color:#999;border-top:1px dashed #d1d1d1;padding-top:5px;margin-top:5px}.fulltext-wrap .fields ul li .tianyan-tips img{margin-left:5px}.fulltext-wrap .fields ul .row{width:100%;overflow:inherit;white-space:normal}.fulltext-wrap .fields .case-basic-info{display:none;position:absolute;background:#fff;border:1px solid #ccc;width:560px;padding:0 10px;z-index:9999}.fulltext-wrap .fields .case-basic-info li{width:50%}.fulltext-wrap .fields .case-basic-info .row{width:100%}.fulltext-wrap .fields .tips{font-size:12px;color:#f72e2e}.fulltext-wrap .new-fields{padding-top:30px;margin-top:20px;border-top:1px solid #d8d8d8}.fulltext-wrap .new-fields h5{font-size:14px;color:#333}.fulltext-wrap .new-fields h5 span{color:#999}.fulltext-wrap .new-fields ul li{width:84%;overflow:inherit;white-space:normal}.fulltext-wrap .new-fields ul li a.emphasis{color:#f72e2e}.fulltext-wrap .change-wrap{margin-bottom:20px;border:1px solid #f7f7f7;position:relative}.fulltext-wrap .change-wrap.change-case .box .c-time{left:161px}.fulltext-wrap .change-wrap.change-case .box ul{margin-left:140px}.fulltext-wrap .change-wrap.change-case .c-fields{width:140px;position:absolute;left:-180px;line-height:140%;text-align:right}.fulltext-wrap .change-wrap.change-case .c-fields .t{font-size:14px}.fulltext-wrap .change-wrap.change-case .c-fields .sub{color:#999;font-size:12px}.fulltext-wrap .change-wrap.change-case .c-fields .sub span{margin-left:10px}.fulltext-wrap .change-wrap.change-case .c-fields .sub span:first-child{margin-left:0}.fulltext-wrap .change-wrap.current .fold-btn .c-arrow{background-position:-92px -60px}.fulltext-wrap .change-wrap .change-title{font-size:16px;color:#333;background:#f7f7f7;line-height:38px;padding:0 20px}.fulltext-wrap .change-wrap .fold-btn{font-size:12px;color:#218fc4;position:absolute;top:10px;right:20px}.fulltext-wrap .change-wrap .fold-btn .c-arrow{width:11px;height:7px;background-position:-110px -60px;margin-left:5px}.fulltext-wrap .change-wrap .box{padding:10px 30px;position:relative}.fulltext-wrap .change-wrap .box .total{font-size:14px;color:#999;margin-bottom:10px}.fulltext-wrap .change-wrap .box.list-box ul{margin-left:0;border-left:0;margin-top:0;padding:0}.fulltext-wrap .change-wrap .box.list-box ul li{margin-bottom:5px;line-height:140%}.fulltext-wrap .change-wrap .box.list-box ul a{font-size:14px;padding-left:30px;position:relative;display:inline-block;*display:inline;*zoom:1}.fulltext-wrap .change-wrap .box.list-box ul a span{position:absolute;left:0}.fulltext-wrap .change-wrap .box.list-box ul a:hover{text-decoration:none;color:#218fc4}.fulltext-wrap .change-wrap .box .c-time{width:21px;height:21px;background-position:-342px -694px;position:absolute;top:20px;left:111px}.fulltext-wrap .change-wrap .box ul{margin-left:90px;border-left:1px solid #c9c9c9;padding:20px 20px 10px 20px;margin-top:20px}.fulltext-wrap .change-wrap .box ul li{line-height:26px;margin-bottom:20px;position:relative}.fulltext-wrap .change-wrap .box ul li .time{font-size:12px;color:#666;position:absolute;left:-110px}.fulltext-wrap .change-wrap .box ul li .c-dot{width:10px;height:10px;background:#10c157;border:3px solid #fff;border-radius:50%;position:absolute;left:-28px;top:5px}.fulltext-wrap .change-wrap .box ul li .theme{font-size:14px;color:#218fc4;font-weight:bold;position:relative}.fulltext-wrap .change-wrap .box ul li .theme a{font-size:14px;color:#333;font-weight:bold}.fulltext-wrap .change-wrap .box ul li .theme a:hover{color:#218fc4}.fulltext-wrap .change-wrap .box ul li .theme .c-dot{top:4px}.fulltext-wrap .change-wrap .box ul li .theme.current a{color:#218fc4}.fulltext-wrap .change-wrap .box ul li .theme.current .c-dot{top:1px}.fulltext-wrap .change-wrap .box ul li .theme .contrast{font-size:12px;color:#218fc4;font-weight:normal;padding:0 10px;margin-left:20px;display:inline-block;*display:inline;*zoom:1;line-height:18px;border:1px solid #218fc4;border-radius:20px;position:relative;top:1px}.fulltext-wrap .change-wrap .box ul li .theme .contrast:hover{color:#fff;text-decoration:none;background:#218fc4}.fulltext-wrap .change-wrap .box ul li .theme .contrast.disabled{color:#d0d0d0;cursor:text;border-color:#d0d0d0}.fulltext-wrap .change-wrap .box ul li .theme .contrast.disabled:hover{color:#d0d0d0;border-color:#d0d0d0;background:none;text-decoration:none}.fulltext-wrap .change-wrap .box ul li .relevance{font-size:14px;color:#218fc4;position:relative}.fulltext-wrap .change-wrap .box ul li .relevance.gray{color:#666}.fulltext-wrap .change-wrap .box ul li .relevance a{color:#666}.fulltext-wrap .change-wrap .box ul li .relevance a:hover{color:#218fc4}.fulltext-wrap .change-wrap .box ul li .relevance p{color:#666}.fulltext-wrap .change-wrap .box ul li .relevance .c-dot{display:none;top:3px}.fulltext-wrap .change-wrap .box ul li .relevance.current a{color:#218fc4}.fulltext-wrap .change-wrap .box ul li .relevance.current .c-dot{display:block;top:-2px}.fulltext-wrap .change-wrap .box ul li .current a{color:#218fc4}.fulltext-wrap .change-wrap .box ul li .current .c-dot{width:15px;height:17px;background:url(https://resources.pkulaw.cn/V6-Static/images/icon.png?20210309) no-repeat;background-position:-342px -728px;border:3px solid #fff;border-radius:50%;position:absolute;left:-31px;top:2px}.fulltext-wrap .change-wrap .box .link{line-height:26px}.fulltext-wrap .change-wrap .box .link a{font-size:14px;color:#218fc4;margin-right:10px;display:inline-block;*display:inline;*zoom:1}.fulltext-wrap .change-wrap .pagination{margin:20px 0}.fulltext-wrap .change-wrap .pagination ul{margin:0 !important;border-left:none !important}.fulltext-wrap .fulltext{font-size:16px;color:#333;line-height:190%;margin-bottom:20px}.fulltext-wrap .fulltext.fulltext-en p.tiao{text-indent:0}.fulltext-wrap .fulltext p.current{background:#218fc4;color:#fff;position:relative;z-index:9999999999999}.fulltext-wrap .fulltext .keyword{font-size:16px;color:#218fc4;font-weight:bold;margin:20px 0 15px 0;display:inline-block;*display:inline;*zoom:1}.fulltext-wrap .fulltext div.keyword{font-size:16px;color:#218fc4;font-weight:bold;display:block;margin:20px 0 15px 0}.fulltext-wrap .fulltext .anchor-case{font-size:18px;color:#218fc4;font-weight:bold;text-align:left;margin:30px 0 10px -25px;display:block;border-left:5px solid #218fc4;padding-left:20px;height:18px;line-height:18px}.fulltext-wrap .fulltext div.anchor-case{font-size:18px;color:#218fc4;font-weight:bold;text-align:left;margin:30px 0 10px -25px;display:block;border-left:5px solid #218fc4;padding-left:20px;height:18px;line-height:18px}.fulltext-wrap .fulltext .anchor-case-relative{position:relative;width:0;font-size:0;height:20px;display:inline-block !important;*display:inline !important;zoom:1 !important}.fulltext-wrap .fulltext .anchor-case-relative .anchor-case-absolute{width:56px;text-align:center;position:absolute;top:-7px;left:-28px}.fulltext-wrap .fulltext .anchor-case-relative .anchor-case-absolute img{max-width:none}.fulltext-wrap .fulltext .anchor-case-relative{position:relative}.fulltext-wrap .fulltext .anchor-case-relative .anchor-case-absolute{width:56px;text-align:center;position:absolute;top:-7px;left:-28px}.fulltext-wrap .fulltext .anchor-case-relative .anchor-case-icon{position:absolute;bottom:-4px;left:50%;margin-left:-2px;display:inline-block;width:0;height:0;border-top:4px solid #218fc4;border-left:4px solid transparent;border-right:4px solid transparent}.fulltext-wrap .fulltext.fulltext-case{color:#333;padding-top:40px}.fulltext-wrap .fulltext.fulltext-case .keyword{font-size:16px;color:#218fc4;font-weight:bold;margin:20px 0 15px 0;display:inline-block;*display:inline;*zoom:1}.fulltext-wrap .fulltext.fulltext-case div.keyword{font-size:16px;color:#218fc4;font-weight:bold;display:block;margin:20px 0 15px 0}.fulltext-wrap .fulltext.fulltext-case .case-title{text-align:center;line-height:30px;margin-bottom:20px}.fulltext-wrap .fulltext.fulltext-case .case-signature{text-align:right;margin-bottom:20px}.fulltext-wrap .fulltext.fulltext-case .case-text{margin-bottom:20px;line-height:30px}.fulltext-wrap .fulltext.fulltext-case .case-text p{text-indent:2em;margin-bottom:10px}.fulltext-wrap .fulltext .htcontent{background:#e1ecf2;padding:10px 0;margin-bottom:10px}.fulltext-wrap .fulltext.fulltext-list li{text-indent:0}.fulltext-wrap .fulltext.fulltext-list li i{line-height:0;display:inline-block;*display:inline;*zoom:1;background:url(https://resources.pkulaw.cn/V6-Static/images/icon.png?20210309) no-repeat;font-size:0;color:#a0a0a0;width:5px;height:5px;background-position:-168px -88px;margin-right:10px;position:relative;top:-7px}.fulltext-wrap .fulltext h5,.fulltext-wrap .fulltext h6{font-size:16px;text-align:center;margin-bottom:20px;margin-top:20px}.fulltext-wrap .fulltext h4{font-size:16px;text-align:center;margin-bottom:20px}.fulltext-wrap .fulltext ul{margin-bottom:20px}.fulltext-wrap .fulltext li{text-indent:2em}.fulltext-wrap .fulltext p.note{color:#218fc4}.fulltext-wrap .fulltext table td{padding:5px}.fulltext-wrap .fulltext table p{text-indent:0}.fulltext-wrap .fulltext em{font-style:normal}.fulltext-wrap .fulltext a{color:#218fc4}.fulltext-wrap .fulltext a.c-imagine{width:14px;height:14px;background-position:-732px -72px;vertical-align:middle;margin-left:5px;display:none}.fulltext-wrap .fulltext a.c-imagine.c-imagine-on{display:inline-block;*display:inline;*zoom:1}.fulltext-wrap .fulltext a.c-imagine:hover{background-position:-732px -104px}.fulltext-wrap .fulltext a font.TiaoNoA{color:#333;font-weight:400}.fulltext-wrap .fulltext .label-tab{font-size:12px;color:#fff;border-radius:30px;padding:0 10px;line-height:22px;display:inline-block;*display:inline;*zoom:1;margin-left:5px}.fulltext-wrap .fulltext .label-tab.yellow{background:#deb925}.fulltext-wrap .fulltext .label-tab.blue{background:#7bc7ed}.fulltext-wrap .fulltext .label-tab.gray{background:#b5c6cd}.fulltext-wrap .fulltext .label-tab.red{background:#ed6048}.fulltext-wrap .fulltext p.tiao em{font-weight:bold}.fulltext-wrap .fulltext .note-wrap{font-size:14px;background:#f6faff;padding:10px}.fulltext-wrap .fulltext .note-wrap strong{color:#8e1d1d}.fulltext-wrap .fulltext .precontent{width:100%;overflow-x:auto;font-family:"宋体";word-break:break-all;line-height:100% !important}.fulltext-wrap .fulltext table{width:100% !important}.fulltext-wrap .fulltext table.c_tb{border:1px solid #666;border-collapse:collapse;border-spacing:0}.fulltext-wrap .fulltext table.c_tb tr:nth-child(2n){background:#f9f9f9}.fulltext-wrap .fulltext table.c_tb tr:first-child td{border-top:none}.fulltext-wrap .fulltext table.c_tb td{border-top:1px solid #666;border-left:1px solid #666;white-space:normal}.fulltext-wrap .fulltext table.c_tb td:first-child{border-left:none}.fulltext-wrap .fulltext li{overflow-x:auto;position:relative}.fulltext-wrap .fulltext li a[name]{position:absolute;top:-210px}.fulltext-wrap .fulltext li table{width:auto !important}.fulltext-wrap .fulltext li table p{word-break:normal}.fulltext-wrap .fulltext .TiaoYinV2{font-size:14px;color:#218fc4;font-weight:bold;line-height:160%;display:block}.fulltext-wrap .fulltext .TiaoYinV2 a{margin-left:10px;font-weight:normal}.fulltext-wrap .fulltext .fbWindow-btn{text-align:right}.fulltext-wrap .fulltext .fbWindow-btn a{color:#999;font-size:12px;margin-left:10px;padding:0 8px;border:1px solid #d5d5d5;border-radius:20px;display:inline-block;*display:inline;*zoom:1}.fulltext-wrap .fulltext .fbWindow-btn a:hover{color:#218fc4;text-decoration:none;border-color:#218fc4}.fulltext-wrap .fulltext .fields{padding:0;background:none;margin-bottom:20px}.fulltext-wrap .fulltext .fields li{font-size:16px;text-indent:0}.fulltext-wrap .fulltext .fields li strong{font-size:16px}.fulltext-wrap .fulltext .fields .case-basic-info li{font-size:12px}.fulltext-wrap .fulltext .fields .case-basic-info li strong{font-size:12px}.fulltext-wrap .fulltext img{max-width:100%}.fulltext-wrap .fulltext .pagination li{text-indent:0}.fulltext-wrap .fulltext .pagination li a{margin-left:0}.fulltext-wrap .fulltext .intelligent-wrap{background:none}.fulltext-wrap .fulltext .intelligent-wrap li{text-indent:0}.fulltext-wrap .fulltext .intelligent-wrap li a{margin-left:0}.fulltext-wrap .fulltext .intelligent-wrap .top{padding-left:0;padding-right:0}.fulltext-wrap .fulltext .intelligent-wrap .top .tab{padding:0 10px}.fulltext-wrap .fulltext .intelligent-wrap .i-list-wrap{margin-left:0;margin-right:0;margin-bottom:0}.fulltext-wrap .col-unpublished{font-size:14px;background:#f6faff;padding:10px}.fulltext-wrap .col-unpublished strong{color:#8e1d1d}.fulltext-wrap .fulltext-tips{background:#fffbef;padding:20px;margin-bottom:20px}.fulltext-wrap .fulltext-tips p{font-size:14px;color:#218fc4;line-height:26px}.fulltext-wrap .prompt-login{font-size:14px;color:#666;line-height:26px;background:#f2fbff;margin-bottom:1px;padding:20px}.fulltext-wrap .prompt-login a{color:#fe901b}.fulltext-wrap .prompt-login .text-center{text-align:center;padding:20px 0 0 0}.fulltext-wrap .prompt-login .text-center .code{margin-bottom:5px}.fulltext-wrap .prompt-login .text-center strong{color:#f72e2e}.fulltext-wrap .prompt-login .text-center .tips{padding-top:10px}.fulltext-wrap .prompt-login .red{color:#f72e2e}.fulltext-wrap .prompt-login .primary{color:#218fc4}.fulltext-wrap .fb-info{font-size:14px;color:#666;line-height:26px;background:#f2fbff;margin-bottom:40px;padding:20px}.fulltext-wrap .fb-info.fb-info-code{padding-right:180px;position:relative;min-height:160px}.fulltext-wrap .fb-info.fb-info-code .code{text-align:center;position:absolute;right:20px;top:10px;width:150px}.fulltext-wrap .fb-info.fb-info-code .code img{width:90%;margin-bottom:10px}.fulltext-wrap .fb-info.fb-info-code .code p{font-size:12px;line-height:16px}.fulltext-wrap .fb-info a{color:#fe901b}.fulltext-wrap .ad{width:100%}.fulltext-wrap .ad img{width:100%}.correlation-info{margin-top:30px}.correlation-info h4{font-size:14px;border-bottom:1px solid #218fc4;margin-bottom:20px;position:relative}.correlation-info h4 span{color:#218fc4;height:23px;line-height:22px;color:#218fc4;border-radius:6px;padding-left:10px;padding-right:10px;background:#fff;display:inline-block;*display:inline;*zoom:1;position:absolute;left:0;top:-12px}.correlation-info h4 a{letter-spacing:1px;color:#218fc4;height:23px;line-height:22px;padding-left:20px;background:#fff;display:inline-block;*display:inline;*zoom:1;position:absolute;right:0px;top:-12px}.correlation-info h5{font-size:14px;text-indent:20px;background:#f7f7f7;padding:10px;margin-top:20px;margin-bottom:10px;position:relative}.correlation-info h5 a{color:#218fc4;position:absolute;right:10px;top:10px}.correlation-info li{font-size:12px;color:#a7a7a7;padding-left:20px;margin-left:10px;line-height:26px;position:relative}.correlation-info li a{color:#7a7a7a}.correlation-info li a .c-icon{position:absolute;left:10px;top:10px}.fulltext-wrap .tiao-wrap{margin-bottom:30px}.fulltext-wrap .tiao-wrap.mt{margin-top:15px}.fulltext-wrap .navtiao{font-weight:bold}.fulltext-wrap .navzhang,.fulltext-wrap .navtiao,.fulltext-wrap .navjie,.fulltext-wrap .anchor,.fulltext-wrap .zhang,.fulltext-wrap .jie,.fulltext-wrap .TiaoNoA{position:relative}.fulltext-wrap .navzhang a,.fulltext-wrap .navtiao a,.fulltext-wrap .navjie a,.fulltext-wrap .anchor a,.fulltext-wrap .zhang a,.fulltext-wrap .jie a,.fulltext-wrap .TiaoNoA a{position:absolute;top:-210px}.fulltext-wrap .navzhang a.alink,.fulltext-wrap .navtiao a.alink,.fulltext-wrap .navjie a.alink,.fulltext-wrap .anchor a.alink,.fulltext-wrap .zhang a.alink,.fulltext-wrap .jie a.alink,.fulltext-wrap .TiaoNoA a.alink{position:static}.fulltext-wrap .navzhang,.fulltext-wrap .navbian,.fulltext-wrap .navjie,.fulltext-wrap .zhang,.fulltext-wrap .jie,.fulltext-wrap .TiaoNoA{line-height:240%}.fulltext-wrap .navzhang,.fulltext-wrap .navbian,.fulltext-wrap .navjie,.fulltext-wrap .TiaoNoA{font-weight:bold}.fulltext-wrap .tiaohit{color:#fff;background:#06a9ee;background-image:-webkit-linear-gradient(left, #fff 18px, #06a9ee 5px);background-image:linear-gradient(left, #fff 18px, #06a9ee 5px)}.fulltext-wrap .tab-wrap{padding-top:10px;font-weight:normal}.fulltext-wrap .tab-wrap .tab-nav ul{margin-bottom:0;height:30px}.fulltext-wrap .tab-wrap .tab-nav ul>li{font-size:14px;color:#333;text-align:center;text-indent:0;background:#f7f7f7;cursor:pointer;height:28px;line-height:28px;padding:0 10px;border:1px solid #d5d5d5;border-top-left-radius:3px;border-top-right-radius:3px;display:inline-block;margin-left:5px}.fulltext-wrap .tab-wrap .tab-nav ul>li.current{color:#fff;background:#218fc4;border-color:#218fc4}.fulltext-wrap .tab-wrap .tab-nav ul>li:first-child{margin-left:0}.fulltext-wrap .tab-wrap .tab-nav ul>li:hover{border-color:#218fc4;color:#fff;background:#218fc4}.fulltext-wrap .tab-wrap .tab-col{font-size:14px;color:#333;line-height:160%;margin-top:-1px}.fulltext-wrap .tab-wrap .tab-col>div{border:1px solid #e2e2e2;background:#fcfafb;padding:30px 20px;display:none}.fulltext-wrap .tab-wrap .tab-col .text-idx{font-weight:600}.fulltext-wrap .tab-wrap .tab-col .diff{border-bottom:1px dashed #ccc;padding:10px 0;margin-bottom:10px}.fulltext-wrap .tab-wrap .tab-col .italic{color:#218fc4}.fulltext-wrap .tab-wrap .tab-col .time{position:relative;padding-top:20px;padding-left:15px}.fulltext-wrap .tab-wrap .tab-col .time .icon{position:absolute;left:10px;top:0;border-radius:50%}.fulltext-wrap .tab-wrap .tab-col .time .icon .c-time{width:21px;height:21px;background-position:-342px -694px;position:relative;left:-4px;top:-4px}.fulltext-wrap .tab-wrap .tab-col .time ul{border-left:1px solid #c9c9c9;padding-left:28px;padding-top:10px}.fulltext-wrap .tab-wrap .tab-col .time ul li{position:relative;text-indent:0;overflow-x:visible}.fulltext-wrap .tab-wrap .tab-col .time ul li .c-dot{position:absolute;left:-37px;top:2px;width:12px;height:12px;border-radius:50%;background:#10c157;border:2px solid #f8f8f8}.fulltext-wrap .tab-wrap .tab-col .time ul li .theme{font-size:14px;font-weight:bold;color:#333;margin-bottom:5px}.fulltext-wrap .tab-wrap .tab-col .time ul li .relevance{font-size:14px;color:#666}.fulltext-wrap .tab-wrap .gray{color:#666}.fulltext-wrap .tab-wrap .green{color:#7cc943}.fulltext-wrap .tab-wrap .red{color:#f72e2e;text-decoration:line-through}.fulltext-wrap .tab-wrap .tips{font-size:14px;color:#666}.fulltext-wrap .tab-wrap .tips i{width:8px;height:8px;display:inline-block;border-radius:50%;margin-right:6px;vertical-align:middle;margin-top:-5px}.fulltext-wrap .tab-wrap .tips i.dot-green{background:#10c157}.fulltext-wrap .tab-wrap .tips i.dot-red{background:#f72e2e;margin-left:10px}.fulltext-wrap .tab-wrap .tips i.dot-black{background:#000;margin-left:10px}.fulltext-wrap .TiaoYinV2{margin-top:10px;position:relative}.fulltext-wrap .TiaoYinV2 .tab-wrap-general{font-weight:normal}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col{font-size:14px !important;color:#333;line-height:160%;margin-top:-1px}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .layer-wrap{background:none}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .layer-wrap dt{font-weight:600;color:#333;margin-bottom:10px;background:none}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .layer-wrap dd a{margin-left:0;color:#333}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .layer-wrap dd a:hover{color:#218fc4}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .text-idx{font-weight:600;font-size:14px !important}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .text-idx .n{font-size:14px !important}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .diff{border-bottom:1px dashed #ccc;padding:10px 0;margin-bottom:10px;font-size:14px !important}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .tiao-n{font-size:14px !important}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .italic{color:#218fc4}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .time{position:relative;padding-top:20px;padding-left:15px}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .time .icon{position:absolute;left:10px;top:0;border-radius:50%}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .time .icon .c-time{width:21px;height:21px;background-position:-342px -694px;position:relative;left:-4px;top:-4px}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .time ul{border-left:1px solid #c9c9c9;padding-left:28px;padding-top:10px}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .time ul li{position:relative;text-indent:0;overflow-x:visible;font-size:14px !important}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .time ul li .c-dot{position:absolute;left:-37px;top:2px;width:12px;height:12px;border-radius:50%;background:#10c157;border:2px solid #f8f8f8}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .time ul li .theme{font-size:14px !important;font-weight:bold;color:#333;margin-bottom:5px}.fulltext-wrap .TiaoYinV2 .tab-wrap-general .tab-col .time ul li .relevance{font-size:14px !important;color:#666}.fulltext-wrap .TiaoYinV2 .mfd-col{font-weight:normal}.fulltext-wrap .TiaoYinV2 .mfd-col:first-child{padding-top:30px}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-nav{position:absolute;top:0;left:0;font-size:14px !important;color:#333;text-align:center;font-weight:normal;text-indent:0;background:#f7f7f7;cursor:pointer;height:28px;line-height:28px;padding:0 10px;border:1px solid #d5d5d5;border-top-left-radius:3px;border-top-right-radius:3px;display:inline-block;margin-left:5px}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-nav.current{color:#fff;background:#218fc4;border-color:#218fc4}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-nav:first-child{margin-left:0}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-nav:hover{border-color:#218fc4;color:#fff;background:#218fc4}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col{font-size:14px !important;color:#333;line-height:160%;margin-top:-1px;border:1px solid #e2e2e2;background:#fcfafb;padding:30px 20px;display:none}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .layer-wrap{background:none}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .layer-wrap dt{font-weight:600;color:#333;margin-bottom:10px;background:none}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .layer-wrap dd a{margin-left:0;color:#333}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .layer-wrap dd a:hover{color:#218fc4}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page{margin-top:20px;font-size:12px;text-align:center;color:#999}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page .counter,.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page .qp_counter{margin-right:10px}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page .counter .current,.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page .qp_counter .current{color:#218fc4}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page a{color:#999;margin-right:5px;border:1px solid #ccc;line-height:normal !important}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page a:hover{color:#fff;text-decoration:none;background:#218fc4;border:1px solid #218fc4}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page a i{display:none}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page a.disabled,.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page a.qp_disabled,.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page a.disabled:hover,.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .page a.qp_disabled:hover{color:#ccc;border:1px solid #ccc;background:#fff;cursor:default}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .text-idx{font-weight:600;font-size:14px !important}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .text-idx .n{font-size:14px !important}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .diff{border-bottom:1px dashed #ccc;padding:10px 0;margin-bottom:10px;font-size:14px !important}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .tiao-n{font-size:14px !important}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .italic{color:#218fc4}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .time{position:relative;padding-top:20px;padding-left:15px}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .time .icon{position:absolute;left:10px;top:0;border-radius:50%}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .time .icon .c-time{width:21px;height:21px;background-position:-342px -694px;position:relative;left:-4px;top:-4px}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .time ul{border-left:1px solid #c9c9c9;padding-left:28px;padding-top:10px}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .time ul li{position:relative;text-indent:0;overflow-x:visible;font-size:14px !important}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .time ul li .c-dot{position:absolute;left:-37px;top:2px;width:12px;height:12px;border-radius:50%;background:#10c157;border:2px solid #f8f8f8}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .time ul li .theme{font-size:14px !important;font-weight:bold;color:#333;margin-bottom:5px}.fulltext-wrap .TiaoYinV2 .mfd-col .tab-col .time ul li .relevance{font-size:14px !important;color:#666}.fulltext-wrap .TiaoYinV2 .green{font-size:14px !important;color:#7cc943}.fulltext-wrap .TiaoYinV2 .red{font-size:14px !important;color:#f72e2e;text-decoration:line-through}.fulltext-wrap .TiaoYinV2 .tips{font-size:14px !important;color:#666}.fulltext-wrap .TiaoYinV2 .tips i{width:8px;height:8px;display:inline-block;border-radius:50%;margin-right:6px;vertical-align:middle;margin-top:-5px}.fulltext-wrap .TiaoYinV2 .tips i.dot-green{background:#10c157}.fulltext-wrap .TiaoYinV2 .tips i.dot-red{background:#f72e2e;margin-left:10px}.fulltext-wrap .TiaoYinV2 .tips i.dot-black{background:#000;margin-left:10px}.fulltext-wrap .link-external{padding:10px 0 0 0;margin-bottom:10px;letter-spacing:-12px}.fulltext-wrap .link-external a{font-size:12px;color:#333;display:inline-block;*display:inline;*zoom:1;text-align:center;position:relative;padding-top:40px;letter-spacing:0;width:16.6%;line-height:1.6;vertical-align:top}.fulltext-wrap .link-external a:hover{text-decoration:none;color:#218fc4}.fulltext-wrap .link-external a:hover>span .c-icon.c-1{background-position:-420px -676px}.fulltext-wrap .link-external a:hover>span .c-icon.c-2{background-position:-446px -676px}.fulltext-wrap .link-external a:hover>span .c-icon.c-3{background-position:-468px -676px}.fulltext-wrap .link-external a:hover>span .c-icon.c-4{background-position:-490px -676px}.fulltext-wrap .link-external a:hover>span .c-icon.c-5{background-position:-512px -676px}.fulltext-wrap .link-external a:hover>span .c-icon.c-6{background-position:-534px -676px}.fulltext-wrap .link-external a>span{width:34px;height:34px;line-height:34px;border-radius:50%;box-shadow:0 0 8px rgba(0,0,0,0.1);display:inline-block;*display:inline;*zoom:1;position:absolute;top:0;left:50%;margin-left:-17px}.fulltext-wrap .link-external a>span .c-icon{position:absolute;left:50%;top:50%}.fulltext-wrap .link-external a>span .c-icon.c-1{width:14px;height:15px;background-position:-420px -656px;margin-left:-7px;margin-top:-7px}.fulltext-wrap .link-external a>span .c-icon.c-2{width:15px;height:15px;background-position:-446px -656px;margin-left:-7px;margin-top:-7px}.fulltext-wrap .link-external a>span .c-icon.c-3{width:17px;height:16px;background-position:-468px -656px;margin-left:-8px;margin-top:-8px}.fulltext-wrap .link-external a>span .c-icon.c-4{width:16px;height:15px;background-position:-490px -656px;margin-left:-8px;margin-top:-7px}.fulltext-wrap .link-external a>span .c-icon.c-5{width:16px;height:18px;background-position:-512px -656px;margin-left:-8px;margin-top:-9px}.fulltext-wrap .link-external a>span .c-icon.c-6{width:19px;height:16px;background-position:-534px -656px;margin-left:-9px;margin-top:-8px}.fulltext-wrap .percent{padding:10px 0;font-size:12px}.fulltext-wrap .percent a{display:block;height:38px;line-height:38px;background:#f7f7f7;color:#999;text-align:center}.fulltext-wrap .percent a:hover{text-decoration:none;background:#f5f5f5}.fulltext-wrap .percent a .primary{color:#218fc4}.fulltext-wrap .percent a .c-double-arrow-down{width:18px;height:14px;background-position:-162px -30px;position:relative;top:2px;margin-left:3px}.fulltext-wrap .tiao-tab-wrap{position:relative}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general{font-weight:normal}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col{font-size:14px !important;color:#333;line-height:160%;margin-top:-1px}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .layer-wrap{background:none}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .layer-wrap dt{font-weight:600;color:#333;margin-bottom:10px;background:none}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .layer-wrap dd a{margin-left:0;color:#333}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .layer-wrap dd a:hover{color:#218fc4}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .text-idx{font-weight:600;font-size:14px !important}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .text-idx .n{font-size:14px !important}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .diff{border-bottom:1px dashed #ccc;padding:10px 0;margin-bottom:10px;font-size:14px !important}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .tiao-n{font-size:14px !important}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .italic{color:#218fc4}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .time{position:relative;padding-top:20px;padding-left:15px}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .time .icon{position:absolute;left:10px;top:0;border-radius:50%}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .time .icon .c-time{width:21px;height:21px;background-position:-342px -694px;position:relative;left:-4px;top:-4px}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .time ul{border-left:1px solid #c9c9c9;padding-left:28px;padding-top:10px}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .time ul li{position:relative;text-indent:0;overflow-x:visible;font-size:14px !important}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .time ul li .c-dot{position:absolute;left:-37px;top:2px;width:12px;height:12px;border-radius:50%;background:#10c157;border:2px solid #f8f8f8}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .time ul li .theme{font-size:14px !important;font-weight:bold;color:#333;margin-bottom:5px}.fulltext-wrap .tiao-tab-wrap .tab-wrap-general .tab-col .time ul li .relevance{font-size:14px !important;color:#666}.fulltext-wrap .tiao-tab-wrap .mfd-col{font-weight:normal}.fulltext-wrap .tiao-tab-wrap .mfd-col:first-child{padding-top:30px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-nav{position:absolute;top:0;left:0;font-size:14px !important;color:#333;text-align:center;font-weight:normal;text-indent:0;background:#f7f7f7;cursor:pointer;height:28px;line-height:28px;padding:0 10px;border:1px solid #d5d5d5;border-top-left-radius:3px;border-top-right-radius:3px;display:inline-block;margin-left:5px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-nav.current{color:#fff;background:#218fc4;border-color:#218fc4}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-nav:first-child{margin-left:0}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-nav:hover{border-color:#218fc4;color:#fff;background:#218fc4}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col{font-size:14px !important;color:#333;line-height:160%;margin-top:-1px;border:1px solid #e2e2e2;background:#fcfafb;padding:30px 20px;display:none}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .i-total{font-size:12px;color:#666;line-height:22px;padding:0 10px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .i-total .label{display:inline-block;padding:0 10px;background:#bbcad1;font-size:12px;color:#fff;border-radius:22px;margin-right:10px;margin-bottom:10px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .i-info{font-size:16px;color:#333;line-height:160%;text-indent:2em;max-height:86px;overflow:auto}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list{margin-bottom:20px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li{position:relative;text-indent:22px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li .list-title{position:relative}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li .list-title h5{font-size:14px;text-align:left;margin:10px 0}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li .list-title h5 a{color:#333}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li .list-title h5 :hover{color:#218fc4}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li .list-title>.c-icon.c-plus{background-position:-644px -60px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li .list-title>.c-icon{position:absolute;left:3px;top:6px;width:10px;height:10px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li .block{padding-left:20px;padding-top:5px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li .block .i-info{font-size:12px;color:#999;text-indent:0}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li .block .tiao-wrap{text-indent:0;padding-top:10px;font-size:14px;color:#333;line-height:160%;display:none;margin-bottom:0}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li .block .tiao-wrap a{color:#333}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list li .block .tiao-wrap :hover{color:#218fc4}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list .current .list-title>.c-icon.c-plus{background-position:-622px -60px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .intelligent-list .list .current .block .tiao-wrap{display:block}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .layer-wrap{background:none}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .layer-wrap dt{font-weight:600;color:#333;margin-bottom:10px;background:none}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .layer-wrap dd a{margin-left:0;color:#333}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .layer-wrap dd a:hover{color:#218fc4}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .page{margin-top:20px;font-size:12px;text-align:center;color:#999}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .page .counter,.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .page .qp_counter{margin-right:10px}.current{color:#218fc4}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .page a{color:#999;margin-right:5px;border:1px solid #ccc;line-height:normal !important}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .page a:hover{color:#fff;text-decoration:none;background:#218fc4;border:1px solid #218fc4}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .page a i{display:none}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .page a.disabled,.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .page a.qp_disabled,.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .page a.disabled:hover,.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .page a.qp_disabled:hover{color:#ccc;border:1px solid #ccc;background:#fff;cursor:default}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .text-idx{font-weight:600;font-size:14px !important}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .text-idx .n{font-size:14px !important}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .diff{border-bottom:1px dashed #ccc;padding:10px 0;margin-bottom:10px;font-size:14px !important}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .tiao-n{font-size:14px !important}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .italic{color:#218fc4}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .time{position:relative;padding-top:20px;padding-left:15px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .time .icon{position:absolute;left:10px;top:0;border-radius:50%}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .time .icon .c-time{width:21px;height:21px;background-position:-342px -694px;position:relative;left:-4px;top:-4px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .time ul{border-left:1px solid #c9c9c9;padding-left:28px;padding-top:10px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .time ul li{position:relative;text-indent:0;overflow-x:visible;font-size:14px !important}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .time ul li .c-dot{position:absolute;left:-37px;top:2px;width:12px;height:12px;border-radius:50%;background:#10c157;border:2px solid #f8f8f8}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .time ul li .theme{font-size:14px !important;font-weight:bold;color:#333;margin-bottom:5px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tab-col .time ul li .relevance{font-size:14px !important;color:#666}.fulltext-wrap .tiao-tab-wrap .mfd-col .gray{color:#666}.fulltext-wrap .tiao-tab-wrap .mfd-col .green{color:#7cc943}.fulltext-wrap .tiao-tab-wrap .mfd-col .red{color:#f72e2e;text-decoration:line-through}.fulltext-wrap .tiao-tab-wrap .mfd-col .tips{font-size:14px;color:#666}.fulltext-wrap .tiao-tab-wrap .mfd-col .tips i{width:8px;height:8px;display:inline-block;border-radius:50%;margin-right:6px;vertical-align:middle;margin-top:-5px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tips i.dot-green{background:#10c157}.fulltext-wrap .tiao-tab-wrap .mfd-col .tips i.dot-red{background:#f72e2e;margin-left:10px}.fulltext-wrap .tiao-tab-wrap .mfd-col .tips i.dot-black{background:#000;margin-left:10px}.code-time{display:none;font-size:12px;color:#666;position:relative;min-height:26px;line-height:26px;background:#fff;border-bottom:1px solid #f8f8f8;padding:5px 20px}.code-time>span{position:absolute;right:20px;top:5px}.code-time>span strong{font-weight:normal;color:#f72e2e}.contrast-wrap.contrast-wrap-en table td{text-indent:0}.contrast-wrap .sort{font-size:14px;text-align:right;margin-bottom:20px;margin-top:10px}.contrast-wrap table{border-top:1px solid #ebedef;border-left:1px solid #ebedef;margin-bottom:20px}.contrast-wrap table .bg{background:#f9f9f9}.contrast-wrap table td{font-size:14px;color:#747474;text-indent:2em;line-height:26px;border-bottom:1px solid #ebedef;border-right:1px solid #ebedef;padding:10px}.contrast-wrap table td h4{font-size:18px;font-weight:normal;text-align:center;margin-bottom:10px}.contrast-wrap table td div span{color:#999;margin-left:10px}.layout-wrap{position:absolute;display:none;border:1px solid #2a94c6;background:#fff}.layout-wrap a{font-size:14px;color:#666;line-height:40px;padding:0 10px;display:block;border-top:1px solid #e9e9e9}.layout-wrap a:first-child{border-top:none}.layout-wrap a .c-icon{width:17px;height:17px;position:relative;top:3px;margin-right:5px}.layout-wrap a .c-icon.c-search-s{background-position:-798px -72px}.layout-wrap a .c-icon.c-annotation-s{background-position:-820px -72px;top:5px}.layout-wrap a:hover{color:#ffce00;text-decoration:none}.layout-wrap a:hover .c-icon.c-search-s{background-position:-798px -104px}.layout-wrap a:hover .c-icon.c-annotation-s{background-position:-820px -104px}.search-no-content{background:#fff;padding:100px 100px 200px 100px}.search-no-content>p{font-size:18px;text-align:left;line-height:26px;color:#666;position:relative;padding-left:40px;min-height:40px;display:inline-block;*display:inline;*zoom:1}.search-no-content>p span{color:#ea2525}.search-no-content .info{padding:20px 60px 0 60px;margin:0px auto 20px}.search-no-content .info p{font-size:14px;color:#666;line-height:26px}.pay-success-single{background:#fff}.pay-success-single>ul{letter-spacing:-12px;width:660px;margin:0 auto;padding:200px 0}.pay-success-single>ul>li{letter-spacing:0;display:inline-block;*display:inline;*zoom:1;vertical-align:top}.pay-success-single>ul>li .success{width:352px;padding:0 20px 0 60px;border-right:1px solid #ececec;position:relative}.pay-success-single>ul>li .success .c-succeed-b{position:absolute;left:0;top:0}.pay-success-single>ul>li .success h3{font-size:26px;color:#333;margin-bottom:40px;padding-top:5px}.pay-success-single>ul>li .success ul{margin-bottom:20px}.pay-success-single>ul>li .success ul li{font-size:12px;color:#666;line-height:24px}.pay-success-single>ul>li .success .btn a{font-size:14px;text-align:center;width:120px;border:1px solid #218fc4;line-height:34px;display:inline-block;*display:inline;*zoom:1}.pay-success-single>ul>li .success .btn a.blue{color:#fff;background:#218fc4;margin-right:20px}.pay-success-single>ul>li .success .btn a.line{color:#218fc4}.pay-success-single>ul>li .code{font-size:12px;color:#666;text-align:center;padding-left:80px}.pay-success-single>ul>li .code img{margin-bottom:10px;border:1px solid #e4e4e4}.pay-success-single>ul>li .code p{line-height:24px}.c-warning-s{width:33px;height:26px;background-position:-48px -128px;position:absolute;left:0;top:0px}.name-box{margin-bottom:15px}.name-box>div{font-size:18px;font-weight:bold;display:inline-block;*display:inline;*zoom:1}.name-box>div.company-name{color:#333;margin-right:40px}.name-box>div .job-name{color:#218fc4}.basic-info{background:#f7f7f7;padding:20px;margin-bottom:30px}.basic-info ul li{font-size:14px;color:#999;line-height:32px}.basic-info ul li .price-wrap{display:inline-block;*display:inline;*zoom:1}.basic-info ul li .price-wrap .price{color:#fa5244}.basic-info ul li .job-desc{display:inline-block;*display:inline;*zoom:1}.basic-info ul li .vline{width:1px;height:12px;vertical-align:middle;background:#e0e0e0;margin:0 10px;display:inline-block;*display:inline;*zoom:1}.describtion{margin-bottom:30px}.describtion .t{font-size:16px;color:#333;font-weight:bold;margin-bottom:20px;position:relative}.describtion .t::after{background:#eee;content:"";display:inline-block;height:1px;position:absolute;right:0;top:12px;width:89%}.describtion .col ul li{font-size:14px;color:#666;line-height:30px}.fulltext-wrap .mix,.fulltext-wrap .copyright,.fulltext-wrap .invisible,.fulltext-wrap .hidden,.fulltext-wrap .hide,.fulltext-wrap .crawler,.fulltext-wrap .regular,.fulltext-wrap .catch,.fulltext-wrap .random,.fulltext-wrap .threshold,.fulltext-wrap .proxy{font-size:0 !important;color:#fff !important;line-height:0 !important;width:0 !important;height:0 !important;display:none !important;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-khtml-user-select:none;user-select:none;text-indent:-9999999px}.guid-wrap{font-size:14px;padding:30px 60px;line-height:190%;background:#fff}.guid-wrap .t{text-indent:0;text-align:center;font-size:18px;margin-bottom:30px}.guid-wrap p{text-indent:2em}.guid-wrap a{color:#218fc4}.guid-wrap a:hover{text-decoration:none;color:#1a6f98}.guid-wrap .text{margin-bottom:30px}.guid-wrap .text .orange{color:#fc9981}.guid-wrap .text .tips{color:#f72e2e}.guid-wrap .img{margin-bottom:10px;text-align:center}.guid-wrap .img img{max-width:80%}.fulltext-gb{background:#fff}.header-gb{*zoom:1;margin-bottom:20px}.header-gb:before,.header-gb:after{content:"";display:table}.header-gb:after{clear:both}.header-gb .left{float:left;width:100%}.header-gb .left .wrap{min-height:1px;margin-right:260px}.header-gb .left .wrap .img img{width:100%}.header-gb .right{float:right;width:260px;margin-left:-100%}.header-gb .right .wrap{padding:10px 20px}.header-gb .right .wrap li{font-size:14px;margin-bottom:10px;color:#333}.header-gb .right .wrap li .gray{color:#999}.header-gb .right .wrap li strong{font-size:20px}.header-gb .right .wrap li a{text-decoration:underline;color:#999}.label-tab-wrap{letter-spacing:-12px;margin-bottom:20px}.label-tab-wrap ul li{display:inline-block;*display:inline;*zoom:1;letter-spacing:0}.label-tab-wrap ul li.current .box a{background:#06a9ee;color:#fff}.label-tab-wrap ul li.current .box a .arrow{border-top-color:#06a9ee}.label-tab-wrap ul li .box{margin-right:10px}.label-tab-wrap ul li .box a{display:block;position:relative;height:30px;line-height:30px;padding:0 25px;background:#ededed;font-size:14px;color:#333}.label-tab-wrap ul li .box a:hover{text-decoration:none;background:#06a9ee;color:#fff}.label-tab-wrap ul li .box a .arrow{border-top:6px solid transparent;border-left:5px solid transparent;border-right:5px solid transparent;position:absolute;bottom:-6px;left:50%;margin-left:-3px}.anchor-structure{position:relative}.anchor-structure .anchor-position{position:absolute;top:-210px}.anchor-structure .anchor_position{position:absolute;top:-210px}.line-gray{height:1px;overflow:hidden;background:#999;margin:10px 0}.general-tab .general-tab-col .editor-note>ul li{width:200px}body{background:none !important}.fulltext-wrap{word-break:break-all;background:none !important;background-image:url(https://resources.pkulaw.cn/V6-Static/images/watermark.jpg) !important;background-position:200px center}.fulltext-wrap .logo{position:relative;margin-bottom:20px}.fulltext-wrap .logo h2{text-indent:-9999px;display:inline-block;*display:inline;*zoom:1;width:250px;height:70px;background:url(https://resources.pkulaw.cn/V6-Static/images/logo.jpg?20210309) no-repeat}.fulltext-wrap .logo div{font-size:14px;position:absolute;right:0;top:20px}.fulltext-wrap .logo div span{color:#f6140c}.fulltext-wrap .link{margin-bottom:20px}.fulltext-wrap .link a{color:#218fc4}.fulltext-wrap .left-right td{font-family:"宋体";padding:10px;width:50%}.correlation-info .h4{font-size:14px;height:40px;border-bottom:1px solid #218fc4;margin-bottom:20px;position:relative}.correlation-info .h4 span{color:#218fc4;height:23px;line-height:22px;color:#218fc4;border-radius:6px;padding-left:10px;padding-right:10px;background:#fff;display:inline-block;*display:inline;*zoom:1;position:absolute;left:0;top:-12px}.correlation-info .h4 a{letter-spacing:1px;color:#218fc4;height:23px;line-height:22px;padding-left:20px;background:#fff;display:inline-block;*display:inline;*zoom:1;float:right}.correlation-info .h5{font-size:14px;height:40px;background:#f7f7f7;padding:10px;margin-top:20px;margin-bottom:10px}.correlation-info .h5 td{padding:10px;font-weight:bold;background:#f7f7f7}.correlation-info .h5 a{color:#218fc4;font-weight:normal;float:right}
+/*# sourceMappingURL=fulltext-download.css.map */
+
+</style>
+</head>
+<body>
+
+
+    <!--[if gte mso 9]>
+        <xml>
+            <o:DocumentProperties>
+                <o:Author>MC SYSTEM</o:Author>
+                <o:LastAuthor>MC SYSTEM</o:LastAuthor>
+                <o:Revision>2</o:Revision>
+                <o:TotalTime>1</o:TotalTime>
+                <o:Created>2012-05-31T14:42:00Z</o:Created>
+                <o:LastSaved>2012-05-31T14:42:00Z</o:LastSaved>
+                <o:Pages>1</o:Pages>
+                <o:Characters>5</o:Characters>
+                <o:Company>MC SYSTEM</o:Company>
+                <o:Lines>1</o:Lines>
+                <o:Paragraphs>1</o:Paragraphs>
+                <o:CharactersWithSpaces>5</o:CharactersWithSpaces>
+                <o:Version>11.5606</o:Version>
+            </o:DocumentProperties>
+        </xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+                           <w:WordDocument>
+                               <w:View>Print</w:View>
+                               <w:SpellingState>Clean</w:SpellingState>
+                               <w:GrammarState>Clean</w:GrammarState>
+                               <w:PunctuationKerning/>
+                               <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+                               <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+                               <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+                               <w:ValidateAgainstSchemas/>
+                               <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+                               <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+                               <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+                               <w:Compatibility>
+                                   <w:SpaceForUL/>
+                                   <w:BalanceSingleByteDoubleByteWidth/>
+                                   <w:DoNotLeaveBackslashAlone/>
+                                   <w:ULTrailSpace/>
+                                   <w:DoNotExpandShiftReturn/>
+                                   <w:AdjustLineHeightInTable/>
+                                   <w:BreakWrappedTables/>
+                                   <w:SnapToGridInCell/>
+                                   <w:WrapTextWithPunct/>
+                                   <w:UseAsianBreakRules/>
+                                   <w:DontGrowAutofit/>
+                                   <w:UseFELayout/>
+                               </w:Compatibility>
+                               <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+                           </w:WordDocument>
+                       </xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+                           <w:LatentStyles DefLockedState='false' LatentStyleCount='156'>
+                           </w:LatentStyles>
+                       </xml><![endif]-->
+    <div class="fulltext-wrap" style=width:880px;margin:auto;>
+
+
+
+        <!-- 正文 -->
+        
+
+
+
+            <div class="logo">
+                <h2><a href="https://www.pkulaw.com" target="_blank">北大法宝</a></h2>
+                    <div><span>【法宝引证码】</span> CLI.C.120590567 </div>
+               
+            </div>
+            <div class="link"> 原文链接：<a target="_blank" href="https://www.pkulaw.com/pfnl/a6bdb3332ec0adc4e2fd7f8d403c61a80bad18256b730be1bdfb.html">https://www.pkulaw.com/pfnl/a6bdb3332ec0adc4e2fd7f8d403c61a80bad18256b730be1bdfb.html</a></div>
+    <div class="content">
+        <!-- 标题 -->
+        <h2 class="title">物美科技集团有限公司、马鞍山市花山物美超市商标权权属、侵权纠纷一审民事判决书</h2>
+
+                <!-- 字段展示 -->
+                <div class="fields">
+                    <p class="zhang">
+                        <a name="basic-info"></a>
+                    </p>
+
+                    <ul>
+<li class=row><div class="box"><strong>案由：</strong>  <a target="_blank" href="?Aggs.CategoryNew=002" >民事</a><a logcode="019004" onclick="ClickEmailFull(this)" href="/email/index" target="_blank" subName="pfnl_Category" subValue="002" class="subscription" title="法宝订阅"><i class="c-icon c-subscription"></i></a></div></li>                                                <li class=row title="(2020)皖05民初40号"><div class="box"><strong>案 号：</strong>(2020)皖05民初40号</div></li>
+                                                <li class=row title="曹悝元,齐萍,王红伟">
+                                                    <div class="box">
+                                                        <strong>审理法官：</strong>
+                                                            <a logcode="019003" logclick target="_blank">曹悝元</a>
+                                                            <a logcode="019003" logclick target="_blank">齐萍</a>
+                                                            <a logcode="019003" logclick target="_blank">王红伟</a>
+                                                    </div>
+                                                </li>
+                                                    <li >
+                                                        <div class="box">
+                                                            <strong>文书类型：</strong>
+                                                                <a logcode="019003" logclick target="_blank" href="?Aggs.DocumentAttr=001">判决书</a>
+                                                                                                                    </div>
+                                                    </li>
+                                                <li>
+                                                    <div class="box">
+                                                        <strong>公开类型：</strong>
+                                                        文书公开
+                                                    </div>
+                                                </li>
+                                                    <li class=row>
+                                                        <div class="box">
+                                                            <strong>审理法院：</strong>
+                                                                <a logcode="019003" logclick target="_blank" href="?Aggs.LastInstanceCourt=140600">安徽省马鞍山市中级人民法院</a>
+                                                                                                                            <a logcode="019004" onclick="ClickEmailFull(this)" href="/email/index" target="_blank" subName="Pfnl_LastInstanceCourt" subValue="140600" class="subscription" title="法宝订阅"><i class="c-icon c-subscription"></i></a>
+                                                        </div>
+                                                    </li>
+                                                <li  title="2020.08.27"><div class="box"><strong>审结日期：</strong>2020.08.27</div></li>
+                                                    <li >
+                                                        <div class="box">
+                                                            <strong>案件类型：</strong>
+                                                                <a logcode="019003" logclick target="_blank" href="?Aggs.CaseClass=003001">民事一审</a>
+                                                                                                                    </div>
+                                                    </li>
+                                                    <li >
+                                                        <div class="box">
+                                                            <strong>审理程序：</strong>
+                                                                <a logcode="019003" logclick target="_blank" href="?Aggs.TrialStep=001">一审</a>
+                                                                                                                    </div>
+                                                    </li>
+                                                <li class=row title="周光敏#北京京师（合肥）律师事务所;蒋珊珊#北京京师（合肥）律师事务所;尚启虎#安徽民主律师事务所;张涛#安徽民主律师事务所">
+
+                                                    <div class="box">
+                                                        <strong>代理律师/律所：</strong>
+                                                            <a logcode="019003" logclick target="_blank">周光敏</a>
+,                                                            <a logcode="019003" logclick target="_blank">北京京师（合肥）律师事务所</a>
+;                                                            <a logcode="019003" logclick target="_blank">蒋珊珊</a>
+,                                                            <a logcode="019003" logclick target="_blank">北京京师（合肥）律师事务所</a>
+;                                                            <a logcode="019003" logclick target="_blank">尚启虎</a>
+,                                                            <a logcode="019003" logclick target="_blank">安徽民主律师事务所</a>
+;                                                            <a logcode="019003" logclick target="_blank">张涛</a>
+,                                                            <a logcode="019003" logclick target="_blank">安徽民主律师事务所</a>
+;                                                    </div>
+                                                </li>
+                                                    <li class=row>
+                                                        <div class="box">
+                                                            <strong>权责关键词：</strong>
+                                                                <a logcode="019003" logclick target="_blank" href="?ExtCondition.CriminalPunish=01010301">委托代理</a>
+                                                                <a logcode="019003" logclick target="_blank" href="?ExtCondition.CriminalPunish=01010502">侵权</a>
+                                                                <a logcode="019003" logclick target="_blank" href="?ExtCondition.CriminalPunish=01010601">停止侵害</a>
+                                                                <a logcode="019003" logclick target="_blank" href="?ExtCondition.CriminalPunish=0102050101">当事人的陈述</a>
+                                                                <a logcode="019003" logclick target="_blank" href="?ExtCondition.CriminalPunish=0102050102">书证</a>
+                                                                <a logcode="019003" logclick target="_blank" href="?ExtCondition.CriminalPunish=0102050302">证据不足</a>
+                                                                <a logcode="019003" logclick target="_blank" href="?ExtCondition.CriminalPunish=0102050314">关联性</a>
+                                                                <a logcode="019003" logclick target="_blank" href="?ExtCondition.CriminalPunish=0102050315">合法性</a>
+                                                                <a logcode="019003" logclick target="_blank" href="?ExtCondition.CriminalPunish=0102050320">质证</a>
+                                                                <a logcode="019003" logclick target="_blank" href="?ExtCondition.CriminalPunish=01020701">诉讼请求</a>
+                                                                <a logcode="019003" logclick target="_blank" href="?ExtCondition.CriminalPunish=01021105">证据保全</a>
+                                                                                                                    </div>
+                                                    </li>
+
+
+                    </ul>
+
+
+
+                </div>
+            <!-- 内容区域 -->
+            <br>
+            <div id="divFullText" class="fulltext">
+
+                <p align='center'><font class='MTitle'>物美科技集团有限公司、马鞍山市花山物美超市商标权权属、侵权纠纷一审民事判决书</font></p><div align="center">安徽省马鞍山市中级人民法院<br>民事判决书</div><div align="right"><span class='case-flag self'>(2020)皖05民初40号</span></div><br><span class='anchor-case' style='display:none'>当事人</span><span anchor='anchor' class='navtiao'><a name='anchor-0'></a></span>　　原告：物美科技集团有限公司。<br>　　法定代表人：张令，该公司董事长。<br>　　委托诉讼代理人:周光敏，北京京师（合肥）律师事务所律师。<br>　　委托诉讼代理人:蒋珊珊，北京京师（合肥）律师事务所律师。<br>　　被告：马鞍山市花山物美超市，经营场所安徽省马鞍山市花山区跃进路某某。<br>　　经营者：王宏军，该超市负责人。<br>　　委托诉讼代理人:尚启虎，安徽民主律师事务所律师。<br>　　委托诉讼代理人:张涛，安徽民主律师事务所律师。<br><span class='anchor-case' style='display:none'>审理经过</span><span anchor='anchor' class='navtiao'><a name='anchor-1'></a></span>　　原告物美科技集团有限公司（以下简称物美集团）与被告马鞍山市花山物美超市（以下简称花山物美超市）侵害商标权及不正当竞争纠纷一案，本院于2020年6月12日立案后，依法适用普通程序，于2020年7月21日公开开庭进行了审理。原告物美集团的委托诉讼代理人周光敏、被告花山物美超市的经营者王宏军及委托诉讼代理人尚启虎到庭参加诉讼。本案现已审理终结。<br><span class='anchor-case' style='display:none'>原告诉称</span><span anchor='anchor' class='navtiao'><a name='anchor-3'></a></span>　　物美集团向本院提出诉讼请求：1.判令花山物美超市立即停止侵害其第3681150号“"、第3681158号“"注册商标专用权的行为；2.判令花山物美超市立即停止使用“物美"作为其企业字号的不正当竞争行为；3.判令花山物美超市赔偿其经济损失及为制止其侵权行为所支付合理费用共计10万元；4.判令花山物美超市承担本案全部诉讼费用。事实和理由：一、其依法享有第3681150号“"、第3681158号“"注册商标的专用权。原告于2005年8月14日获得了第3681150号“"和第3681158号“"注册商标，上述商标经续展后的专用权期限为2015年8月14日至2025年8月13日，核定使用范围包括：推销（替他人）、进出口代理、广告、广告设计、商业评估、市场分析等服务。目前上述商标均处于注册有效期限内。二、其享有的商标在国内拥有极高的知名度和美誉度。物美集团是我国最大、发展最早的现代流通企业之一,是京津冀地区最大的商业零售企业。自1994年张文中博士在京率先创办物美综合超市以来，在连锁超市领域辛勤耕耘，取得了显著的成就。目前，在××区拥有各类店铺超过1000家，年销售额500余亿元，资产500余亿元，员工10万余名。集团业务主要涉及零售贸易、电子商务、互联网／物联网科技、物流运输等多个业态，旗下有美廉美超市、新华百货、浙江供销、百安居、奥士凯物美、崇菜物美、圣熙八号、京北大世界、浙江供销等多个知名品牌，并连续18年荣获“中国连锁经营100强"，排名不断提升。物美集团秉承“发展现代零售产业，提升大众生活品质"的经营理念，长期致力于发展民族流通产业，为国家稳增长、促就业、惠民生做出重要贡献，被誉为首都的“米袋子、菜篮子"，享有极高的知名度和美誉度。三、花山物美超市实施了侵害其商标权及不正当竞争的行为。经调查，花山物美超市未经其许可授权，擅自以其名义开设物美超市。在提供服务的过程中在店招门头、店内装饰装潢等位置突出使用与其商标相同或近似的标识，对外以物美超市的名义开展经营活动，容易使消费者误认为是其连锁超市或加盟店，已经构成了商标侵权。花山物美超市的行为显然是为了吸引顾客，攀附其知名度与美誉度。花山物美超市使用“物美"作为其企业字号，对其构成不正当竞争。根据我国《<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#' class='alink' onmouseover='AJI(331486)'>商标法</a>》、《<a href='https://www.pkulaw.com/chl/2c43887f7b0da4c8bdfb.html#' class='alink' onmouseover='AJI(224344)'>商标法实施条例</a>》、《<a href='https://www.pkulaw.com/chl/baff2109c24038ecbdfb.html#' class='alink' onmouseover='AJI(331488)'>反不正当竞争法</a>》等规定，花山物美超市的行为已侵犯了其的商标权,并构成不正当竞争，情节严重。<br><span class='anchor-case' style='display:none'>被告辩称</span><span anchor='anchor' class='navtiao'><a name='anchor-4'></a></span>　　花山物美超市辩称，一、其没有以物美集团名义开设超市，也没有以物美集团名义对外开展经营活动。同时其并未在店招门头、店内装饰装潢等位置突出使用与物美集团商标相同或近似的标识，没有侵犯物美集团的商标专用权，也不构成对物美集团的不正当竞争。二、其未将物美集团享有的第3681150号“"、第3681158号“"注册商标作为商标使用。其在店招门头上使用的图标是自己独创的，明显不同于物美集团的图形商标；使用的物美超市字样是对其个体工商户名称的简化，是正当合法地使用自己字号的行为。截至其收到原告起诉状前，对物美集团及其注册的商标并不了解，并无攀附物美集团注册商标的主观恶意。三、其并未实施侵犯物美集团注册商标的行为。1.物美集团享有的注册商标核准为第35类服务项目，不包括商品的批发零售，商场超市的服务。其经营范围是日用百货、食品批发零售以及卷烟销售等，与物美集团注册商标核定使用的商品范围不一致，不构成商标侵权。2.其并未突出使用物美集团注册商标，其在店招门头上使用的图标与物美集团的图形商标既不相同也不相似，使用的物美超市字样的字体、大小、颜色均不相同，且其销售商品中打印的购物小票显示的是其全称，并未突出使用物美集团的注册商标，并无攀附物美集团商标的恶意。3.其使用“物美超市"字样不会使相关公众产生误认。首先，物美是指物品或商品质量好的意思，常与“价廉"组合成为成语使用，物美集团将“物美"注册为商标显著性较弱，被混淆的可能性较小。其门店的橱窗上就有“物美价廉，尽在物美"字样，表明了其为自己超市起物美之名，意在宣传其销售的物品或商品质量好，而非要攀附原告商标之美誉。其次，其营业区域小，经营面积小，与作为大型集团公司的物美集团无法相提并论，相关公众不会产生混淆。四、物美集团将企业名称与注册商标混为一谈，片面夸大注册商标的知名度，且2006年物美集团自有品牌“物美"品牌商品就已经全部退市，物美集团在在诉状当中所列荣誉也仅仅是企业本身，而非注册商标本身，被告并无侵犯原物美集团注册商标的必要性。五、物美集团的“物美"文字商标不具有显著性，无权禁止他人正常使用，物美指商品或物品质量好的意思，依据《<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#' class='alink' onmouseover='AJI(331486)'>中华人民共和国商标法</a>》第<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html##tiao_59' class='alink' onmouseover='AJI(331486,59)'>59条</a>之规定，注册商标中含有直接表达商品质量的，注册商标专用用权人无权禁止他人正当使用，故物美集团无权禁止他人使用“物美"二字。况且经其查询，仅安徽省登记注册并处于正常经营状态的使用“物美超市"字样的商家，就有100多家，使用“物美"作为企业字号的有200多家。六、被告使用“物美超市"是正常使用其个体工商户字号的行为，并未侵犯物美集团的注册商标权。且被告的使用行为系经过工商行政管理机关核准使用，物美集团无权通过民事诉讼程序要求被告停止使用。七、物美集团要求其赔偿损失无事实和法律依据，依法不应支持。综上，请求依法驳回物美集团的全部诉讼请求。<br>　　物美集团提交了以下证据拟证明其诉讼主张：<br>　　第一组，北京市海诚公证处出具的（2018）京海诚内经证字第01941号、（2019）京海诚内经证字第00395、00396号公证书，证明其是第3681150号“"、第3681158号“"注册商标的权利人，有权以自己的名义对侵害商标权的行为提起诉讼。<br>　　第二组，北京市海诚公证处出具的（2018）京海诚内经证字第01942号、<span class='case-flag zero'>（2018）京海诚内民证字第15591号</span>公证书，证明其所有的物美商标拥有极高的知名度和美誉度。其为经营物美品牌投入了巨大的人力、物力、财力等经营成本。<br>　　第三组，北京市求是公证处出具的（2019）京求是内经证字第1059号公证书，证明花山物美超市实施了侵害其商标专用权的行为，侵权规模大，非法获利情节严重，给其造成重大损失。<br>　　花山物美超市对以上证据质证认为，对第一组证据无异议，对第二组证据的真实性和证明目的均不予认可，对第三组证据的真实性、合法性均无异议，但达不到原告的证明目的。<br>　　<span class="anchor-case-relative" style='display:none'><span class="anchor-case-absolute"><img src="/content/images/zj.png" alt=""></span></span><span anchor='anchor' class='navtiao'><a name='anchor-7'></a></span>花山物美超市向本院提供证据如下：<br>　　第一组，营业执照、预先核准通知书各一份，证明其商户的名称是马鞍山市花山物美超市，该名称系经工商部门核准使用的。<br>　　第二组，店招门头照片一张，证明其店招门头上有拼音、图标、汉字三部分组成。拼音是“wumei"，图标是W和M的艺术组合，是其精心设计的独创图标，“物美超市"四个字中的“物美"二字在字体、颜色、大小等方面均不同于原告的文字商标。<br>　　第三组，商店橱窗照片一张，证明其超市中的物美名称是指物品或者商品质量好的意思，而非攀附物美集团商标的美誉。<br>　　第四组、启信宝查询信息两份，证明在安徽省地区范围内使用“物美超市"作为企业字号的商家有近200家，充分表明“物美"在企业名称中使用的频率相当之高。<br>　　第五组、金融百科信息一份，证明2006年5月原物美自有品牌的商品已经全部退市。<br>　　物美集团质证认为，对第一组、第二组证据的真实性没有异议，对其合法性以及证明目的均持有异议；对第三组证据真实性没有异议，但是对其证明目的不予认可；对第四组证据真实性、关联性和证明目的不予认可；对第五组证据的内容没有异议，但是对于其提供的word文档纸质证据真实性不予认可，对其证明目的也不予认可。<br>　　根据当事人的举证、质证，并结合当事人的陈述，本院对上述证据认证如下：物美集团提交的第一组、第三组证据均系具有法律效力的书证，予以采信；第二组证据结合其他相关证据综合予以认定；花山物美超市提交的第一组、第二组、第三组证据予以认定；第四组、第五组证据系网络查询打印件，物美集团亦不认可该证据真实性，本院不予认证。<br><span class='anchor-case' style='display:none'>本院查明</span><span anchor='anchor' class='navtiao'><a name='anchor-5'></a></span>　　本院经审理查明：物美控股集团有限公司成立于1994年10月，注册资金为8亿元，经营范围包括：技术咨询；技术服务；购销百货、五金交电化工、针纺织品、工艺美术品、建筑材料、家具；销售食品添加剂、厨房用具、汽车、家用电器、企业管理、市场调查、发布广告等。2019年2月19日，物美控股集团有限公司名称变更为物美科技集团有限公司（物美集团）。物美控股集团有限公司先后荣获2004年中国零售业十大影响力企业荣誉，2010、2011、2015、2016、2017年均进入中国民营企业500强，2015年“物美"荣获2014年度北京十大商业品牌，2017年“物美"被北京晨报授予2017年京城百姓最喜爱的新消费影响力榜（商超篇），第1179842号注册商标荣获2007年度北京市著名商标，2018年1月被评定为中国连锁经营协会常务理事单位等。2003年8月20日，北京物美投资集团有限公司申请注册商标，并于<span class='case-flag zero'>2005年8月14日经国家工商行政管理总局商标局核准取得第3681150号</span>“"、第3681158号“"注册商标，核定服务项目为第35类：推销（替他人）、进出口代理、广告等。2008年11月13日经国家工商行政管理总局商标局核准，第3681150号“"、第3681158号“"注册商标变更注册人为物美控股集团有限公司，该商标经续展有效期至2025年8月13日。<br>　　花山物美超市系个体工商户，名称于2010年6月3日经马鞍山市工商行政管理局花山工商行政管理所预核准，并于2010年7月15日注册成立，经营范围为烟、百货零售；预包装食品兼散装食品，乳制品（含婴幼儿配方乳粉）批发兼零售某某（依法需经批准的项目经相关部门批准后方可经营）。该店招门头由“wumei"、自创图标、“物美超市"共同组成，字体颜色为玫红色；店铺橱窗贴有“物美价廉尽在物美"八个黄色字样。<br>　　2019年7月5日，正尚律和（北京）知识产权服务有限公司受物美集团委托作为申请人向北京市求是公证处申请证据保全公证。2019年7月10日，正尚律和（北京）知识产权服务有限公司委托代理人张雪会同北京市求是公证处公证员周某与公证处工作人员高畅，来到位于安徽省马鞍山市花山区下的物美超市店，店内悬挂有名称为“马鞍山市花山物美超市"的营业执照。在公证员与公证工作人员的监督下，张雪向店内工作人员购买牙线一盒，并取得购物小票一张。张雪对手机付款界面进行了拷屏，取得支付宝支付截图（带收款方马鞍山市花山物美超市、收款金额4.00字样）一张。公证员与公证工作人员使用经清洁性检查后的手机对上述场所的内外环境进行了拍照，并监督张雪对保全时取得的上述物品进行了拍照。公证员与公证工作人员对该物品进行封存，并监督张雪对封存后的物品进行拍照。封存后的物品交张雪留存。公证员与公证工作人员监督张雪将本次保全过程中拍摄的全部照片及截图文件（共十页）进行了打印。2019年8月19日，北京市求是公证处就上述证据保全过程作出（2019）京求是内经证字第1059号公证书。物美平价超市在门头店招及企业名称中使用了“物美"字样。<br><span class='anchor-case' style='display:none'>本院认为</span><span anchor='anchor' class='navtiao'><a name='anchor-6'></a></span>　　本院认为，本案的<span class="anchor-case-relative" style='display:none'><span class="anchor-case-absolute"><img src="/content/images/zyjd.png" alt=""></span></span><span anchor='anchor' class='navtiao'><a name='anchor-8'></a></span>争议焦点是：1．花山物美超市的行为是否构成商标侵权；2.花山物美超市的行为是否构成不正当竞争。<br>　　一、关于花山物美超市的行为是否构成商标侵权的问题。物美集团经国家工商行政管理总局商标局核准，依法取得第3681150号“"、第3681158号“"注册商标，该商标权利应受法律保护。<span class="anchor-case-relative" style='display:none'><span class="anchor-case-absolute"><img src="/content/images/cpyj.png" alt=""></span></span><span anchor='anchor' class='navtiao'><a name='anchor-10'></a></span>《<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#' class='alink' onmouseover='AJI(331486)'>中华人民共和国商标法</a>》第<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html##tiao_48' class='alink' onmouseover='AJI(331486,48)'>四十八条</a>规定，本法所称商标的使用是指将商标用于商品、商品包装或者容器以及商品交易文书上，或者将商标用于广告宣传、展览以及其他商业活动中，用于识别商品来源的行为。《<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#' class='alink' onmouseover='AJI(331486)'>中华人民共和国商标法</a>》第<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html##tiao_57' class='alink' onmouseover='AJI(331486,57)'>五十七条</a>第<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html##tiao_57_kuan_1_xiang_2' class='alink' onmouseover='AJI(331486,57,1,2)'>二项</a>规定，未经商标注册人的许可，在同一种商品上使用与其注册商标近似的商标，或者在类似商品上使用与其注册商标相同或者近似的商标，容易导致混淆的，属于侵犯商标专用权的行为。本案中，花山物美超市将“物美"二字作为其企业名称的字号使用且在其门头店招上使用，但其并未将“物美"标识用于商品或宣传，其在门头店招上使用“物美超市"字样系对企业名称的简化，起到表明企业名称的作用，非商标性使用。且物美集团的注册商标的核准使用范围与被告经营范围也不同，不构成同一种商品或类似商品上使用。其次，花山物美超市的营业区域小、经营面积小，与作为大型集团公司的物美集团无法相提并论，其行为也不会导致消费者对商品或服务的来源产生混淆误认。故花山物美超市涉案被诉行为不构成商标性使用，不会导致消费者的混淆误认，不构成侵害物美集团的注册商标专用权。《<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#' class='alink' onmouseover='AJI(331486)'>中华人民共和国商标法</a>》第<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html##tiao_59' class='alink' onmouseover='AJI(331486,59)'>五十九条</a>规定，注册商标中含有的本商品的通用名称、图形、型号，或者直接表示商品的质量、主要原料、功能、用途、重量、数量及其他特点，或者含有的地名，注册商标专用权人无权禁止他人正当使用。汉语言文字中有“物美价廉"成语，该成语在汉语中的使用由来已久，“物美"单独使用表示的意思为物品质量好，普通消费者对其字面意思广为知悉。物美集团无权禁止花山物美超市正当使用“物美"字样。<br>　　二、关于花山物美超市的行为是否构成不正当竞争的问题。《<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#' class='alink' onmouseover='AJI(331486)'>中华人民共和国商标法</a>》第<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html##tiao_58' class='alink' onmouseover='AJI(331486,58)'>五十八条</a>规定，将他人注册商标、未注册的驰名商标作为企业名称中的字号使用，误导公众，构成不正当竞争行为的，依照《<a href='https://www.pkulaw.com/chl/baff2109c24038ecbdfb.html#' class='alink' onmouseover='AJI(331488)'>中华人民共和国反不正当竞争法</a>》处理。《<a href='https://www.pkulaw.com/chl/baff2109c24038ecbdfb.html#' class='alink' onmouseover='AJI(331488)'>中华人民共和国反不正当竞争法</a>》第<a href='https://www.pkulaw.com/chl/baff2109c24038ecbdfb.html##tiao_6' class='alink' onmouseover='AJI(331488,6)'>六条</a>规定，经营者不得擅自使用他人有一定影响的企业名称（包括简称、字号等），实施混淆行为，引人误认为是他人商品或者与他人存在特定联系。根据上述规定，构成不正当竞争行为，须符合以下构成要件：一、将他人注册商标、未注册的驰名商标作为企业名称中的字号使用，或者擅自使用他人有一定影响的企业名称（包括简称、字号等）；二、实施混淆行为，误导公众，引人误认为是他人商品或者与他人存在特定联系。本案中，花山物美超市在其企业名称及门头店招中使用“物美"二字，虽然与物美集团的企业名称中的字号“物美"二字相同，但物美集团的注册商标“"、“"及企业字号中的“物美"，显著性较弱。《<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#' class='alink' onmouseover='AJI(331486)'>中华人民共和国商标法</a>》第<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html##tiao_11' class='alink' onmouseover='AJI(331486,11)'>十一条</a>规定仅直接表示商品质量的标志不得作为商标注册，第<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html##tiao_59' class='alink' onmouseover='AJI(331486,59)'>五十九条</a>规定直接表示商品质量的注册商标专用权人无权禁止他人正当使用。上述规定系对直接表示商品质量的注册商标权利的限制性规定，也从另一角度显示了<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#' class='alink' onmouseover='AJI(331486)'>商标法</a>对于直接表示商品质量的注册商标的权利予以限制的立法态度。汉字“物美"的意思表示物品质量好，物美集团将“物美"作为商标使用，削弱了商标的显著性。2.花山物美超市并未使用物美集团的图形商标。物美集团的“"注册商标将文字与图形标志结合使用，起到商标区分商品来源的作用，但花山物美超市仅使用“物美"文字，未使用图形标志，基于“物美"汉字在汉语言中的字面意思及使用的长期性及普遍性，单独使用“物美"造成消费者产生混淆与误认的可能性较低。花山物美超市使用“物美"作为企业的字号，难以认定系攀附物美集团商标的商誉。3.花山物美超市的行为不足以引起公众混淆或误认。被告系位于路边的个体小超市，其服务区域主要涉及其经营场所附近的区域，服务的消费群体主要限于其经营场所附近的消费者。物美集团并未提交证据证明在花山物美超市注册企业名称时其“"、“"商标在马鞍山市区域进行使用及宣传，亦未提交证据证明物美集团在前述区域开设分公司或从事商业经营，未提交“"、“"商标及其“物美"字号具有较高知名度足以导致花山物美超市经营区域的消费者产生混淆误认的证据，且花山物美超市的经营规模相较原告开设的大型卖场而言差距较大，普通消费者较易识别双方之间的差别，对服务区域的普通消费者造成误认的可能性较小，故虽花山物美超市企业名称中的字号与物美集团的字号“物美"相同，也并不必然会导致花山物美超市经营区域的相关公众的误认。<br>　　综上，物美集团提交的现有证据不足以证明花山物美超市将“物美"登记为企业名称中的字号并使用于店招门头，具有攀附物美集团商誉的故意，不足以证明花山物美超市的行为会造成相关公众的误认，花山物美超市的被诉行为不构成侵害物美集团的注册商标专用权，亦不构成不正当竞争行为。对物美集团要求花山物美超市停止侵权、变更企业名称、赔偿经济损失的诉讼请求，本院均不予支持。<br>　　依据《<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#' class='alink' onmouseover='AJI(331486)'>中华人民共和国商标法</a>》第<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html##tiao_56' class='alink' onmouseover='AJI(331486,56)'>五十六条</a>、第<a href='https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html##tiao_58' class='alink' onmouseover='AJI(331486,58)'>五十八条</a>，《<a href='https://www.pkulaw.com/chl/baff2109c24038ecbdfb.html#' class='alink' onmouseover='AJI(331488)'>中华人民共和国反不正当竞争法</a>》第<a href='https://www.pkulaw.com/chl/baff2109c24038ecbdfb.html##tiao_6' class='alink' onmouseover='AJI(331488,6)'>六条</a>第<a href='https://www.pkulaw.com/chl/baff2109c24038ecbdfb.html##tiao_6_kuan_1_xiang_2' class='alink' onmouseover='AJI(331488,6,1,2)'>二项</a>，《<a href='https://www.pkulaw.com/chl/ec2d22081f39cc5bbdfb.html#' class='alink' onmouseover='AJI(42739)'>最高人民法院关于审理商标民事纠纷案件适用法律若干问题的解释</a>》第<a href='https://www.pkulaw.com/chl/ec2d22081f39cc5bbdfb.html##tiao_1' class='alink' onmouseover='AJI(42739,1)'>一条</a>，《<a href='https://www.pkulaw.com/chl/d33df017c784876fbdfb.html#' class='alink' onmouseover='AJI(297379)'>中华人民共和国民事诉讼法</a>》第<a href='https://www.pkulaw.com/chl/d33df017c784876fbdfb.html##tiao_64' class='alink' onmouseover='AJI(297379,64)'>六十四条</a>第<a href='https://www.pkulaw.com/chl/d33df017c784876fbdfb.html##tiao_64_kuan_1' class='alink' onmouseover='AJI(297379,64,1)'>一款</a>规定，判决如下：<br><span class='anchor-case' style='display:none'>裁判结果</span><span anchor='anchor' class='navtiao'><a name='anchor-2'></a></span>　　驳回物美科技集团有限公司的诉讼请求。<br>　　案件受理费2300元，由物美科技集团有限公司负担。<br>　　如不服本判决,可在判决书送达之日起十五日内,向本院递交上诉状,并按对方当事人的人数提出副本,上诉于安徽省高级人民法院。<br><span class='anchor-case' style='display:none'>落款</span><span anchor='anchor' class='navtiao'><a name='anchor-9'></a></span><div align="right"><br>审判长　　曹悝元<br>审判员　　齐　萍<br>审判员　　王红伟<br>二〇二〇年八月二十七日<br>法官助理唐斌<br>书记员易莉</div>
+            </div>
+
+    </div>
+
+<script>
+
+    $(function () {
+        //关联案件与文书
+        getCaseAssociationData(1);
+    })
+</script>
+
+
+
+        <!-- 未登录展示，目前此处按照原系统逻辑处理，登录和权限的判断在一起。 -->
+
+
+        <!-- 法宝信息 -->
+        
+
+<div id="ads_container">
+    <a href="https://www.pkulaw.com/" target='_blank'><img class="ad" src="https://manage.pkulaw.cn/UploadFiles/images/emailpic.jpg" data-bd-imgshare-binded='1'></a>
+</div>
+
+
+
+
+
+
+
+
+            <!-- 正文相关信息 -->
+                <div class="correlation-info">
+                    <span anchor="anchor" class="zhang" align="center">
+                        <a name="association_1"></a>
+                    </span>
+
+                        <table class="h4" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td align="left" width="90%"><span>本案法律依据</span></td>
+                                <td align="right">
+                                </td>
+                            </tr>
+                        </table>
+                                            <ul>
+
+                                        <li>
+                                                <a target="_blank" href="https://www.pkulaw.com/chl/2c43887f7b0da4c8bdfb.html#tiao_0">
+                                                    <i class="c-icon arrow-blue-right-s"></i>中华人民共和国商标法实施条例(2014修订)
+                                                </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                <a target="_blank" href="https://www.pkulaw.com/chl/d33df017c784876fbdfb.html#tiao_64">
+                                                    <i class="c-icon arrow-blue-right-s"></i>中华人民共和国民事诉讼法(2017修正) 第64条1款
+                                                </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                <a target="_blank" href="https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#tiao_11">
+                                                    <i class="c-icon arrow-blue-right-s"></i>中华人民共和国商标法(2019修正) 第11条
+                                                </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                <a target="_blank" href="https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#tiao_48">
+                                                    <i class="c-icon arrow-blue-right-s"></i>中华人民共和国商标法(2019修正) 第48条
+                                                </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                <a target="_blank" href="https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#tiao_56">
+                                                    <i class="c-icon arrow-blue-right-s"></i>中华人民共和国商标法(2019修正) 第56条
+                                                </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                <a target="_blank" href="https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#tiao_57">
+                                                    <i class="c-icon arrow-blue-right-s"></i>中华人民共和国商标法(2019修正) 第57条1款2项
+                                                </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                <a target="_blank" href="https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#tiao_58">
+                                                    <i class="c-icon arrow-blue-right-s"></i>中华人民共和国商标法(2019修正) 第58条
+                                                </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                <a target="_blank" href="https://www.pkulaw.com/chl/937235cafaf2a66fbdfb.html#tiao_59">
+                                                    <i class="c-icon arrow-blue-right-s"></i>中华人民共和国商标法(2019修正) 第59条
+                                                </a>
+
+                                            
+
+                                        </li>
+                        </ul>
+                </div>
+            <!-- 正文相关信息 -->
+                <div class="correlation-info">
+                    <span anchor="anchor" class="zhang" align="center">
+                        <a name="association_2"></a>
+                    </span>
+
+                        <table class="h4" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td align="left" width="90%"><span>同案由重要案例</span></td>
+                                <td align="right">
+                                </td>
+                            </tr>
+                        </table>
+                                            <ul>
+
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce1ea7367f4d0d83be2fadd718be422ae35bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>最高人民检察院发布八起“检爱同行共护未来”未成年人保护法律监督专项行动典型案例之四：江苏省宿迁市宿城区人民检察院对Z电竞酒店提起民事公益诉讼案——共促电竞酒店新业态监管治理
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce16601f6fb461bb3ae0cd8f2c8caf71853bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>江苏省扬州市中级人民法院发布8起服务保障中小微企业健康发展典型案例之七：扬州市开发区某经营部与某保险股份有限公司扬州中心支公司涉疫情保险理赔案——妥善审理涉疫情保险合同，护航中小微企业复工复产
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce129b10ebb758cd353731f67e1091eb0f6bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>河南省高级人民法院发布2021年度十大商事暨涉企典型案例之七：安阳化学工业集团有限责任公司与深圳市海格金谷工业科技有限公司合同纠纷案——债务人进入破产程序后，抵押权人对未经登记的抵押动产不再享有优先受偿权
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce1080e1bdc9c94ad2096e7d31d117e2d4cbdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>海南省高级人民法院发布两起破产审判典型案例之一：海南中航特玻材料有限公司破产重整案
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce16fc30d91e940db05c423350098775c75bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>广东省广州市中级人民法院发布破产审判十大典型案例之五：某驾校破产清算转重整案——强制裁定批准重整计划草案充分保护各方合法权益
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce127e0f2e5d34a5974fbb148f5f523bac8bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>山东省青岛市中级人民法院发布2021年度十大典型案例之六：某（青岛）置业有限公司破产重整案——以破产重整方式盘活企业资产实现高质量发展
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce17bc365c21b01a381fc325c8c9889fca7bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>广东省广州市中级人民法院发布破产审判十大典型案例之四：某信息技术公司重整案——简易重整机制快速拯救中小微企业
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce15787d5fbeb05c206ed605e20365ea4d2bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>广东省高级人民法院发布11个助力中小微企业发展典型案例之三：某信息技术公司破产重整案——快速重整促进企业重获新生
+                                                    </a>
+
+                                            
+
+                                        </li>
+                        </ul>
+                </div>
+            <!-- 正文相关信息 -->
+                <div class="correlation-info">
+                    <span anchor="anchor" class="zhang" align="center">
+                        <a name="association_3"></a>
+                    </span>
+
+                        <table class="h4" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td align="left" width="90%"><span>本法院同类案例</span></td>
+                                <td align="right">
+                                </td>
+                            </tr>
+                        </table>
+                                            <ul>
+
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce1ee75935f57f7e96f05e94be84a1fe0a8bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>高晶、钟建等合同纠纷民事二审民事判决书
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce147a7fa908a6731802f6cc029e55648cdbdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>许信萍、浙江中硕资产管理有限公司等追偿权纠纷民事二审民事判决书
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce1d27ef27dda1d1dde660a3a860b9629f0bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>国元农业保险股份有限公司马鞍山中心支公司营业部、国元农业保险股份有限公司马鞍山中心支公司等责任保险合同纠纷民事二审民事判决书
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce19da029685c0a9b4b7b6ae6e381cc4ad8bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>马鞍山市天佑建筑劳务有限公司、周中华等买卖合同纠纷民事二审民事判决书
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce14c7906fd08bc1df130aeabbfa2f0e320bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>孙立忠、马鞍山市鑫洲玻璃钢管有限公司买卖合同纠纷民事二审民事判决书
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce18d545620b21aadb73c781511f432f7f2bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>刁海明、王志银等合同纠纷民事二审民事判决书
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce17211b279f46e568ce46702e89e2fa3c0bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>汲正华、庆承东合同纠纷民事二审民事裁定书
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/pfnl/95b2ca8d4055fce113ad15cf097b7bbfadb9830fcd5c1b5bbdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>安徽鲸鹏贸易有限公司、宣城三建建设集团有限公司等买卖合同纠纷民事二审民事判决书
+                                                    </a>
+
+                                            
+
+                                        </li>
+                        </ul>
+                </div>
+            <!-- 正文相关信息 -->
+                <div class="correlation-info">
+                    <span anchor="anchor" class="zhang" align="center">
+                        <a name="association_4"></a>
+                    </span>
+
+                        <table class="h4" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td align="left" width="90%"><span>相关论文</span></td>
+                                <td align="right">
+                                </td>
+                            </tr>
+                        </table>
+                                            <ul>
+
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/qikan/c14ea85526eb591f68eb055d2d43b3a7bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>个人承包经营企业期间对外转移债权的限制
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/qikan/479033b80a76c7f1d960d51346cbb82bbdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>难以触及的真相：一起清代知县隐匿灾情弹劾案的分析
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/qikan/03712b345d2afb6808373ddc5101b811bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>跨行政区联合应急制度的实施状况分析
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/qikan/544a7d05a5e8ca15452c47f11a824000bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>不真正不作为犯处罚范围实证研究
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/qikan/edb497a135e899f34e3b8cea1fb9b793bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>被告人与被害人的熟人关系影响量刑的机理检视
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/qikan/8cefc130a5ebe2780261b10e09f80fe4bdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>轻罪案件中的逮捕社会危险性条件研究
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/qikan/03712b345d2afb68c5cf4eff0ff4879ebdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>《奏谳书》“狱史阑案”的法律适用
+                                                    </a>
+
+                                            
+
+                                        </li>
+                                        <li>
+                                                    <a target="_blank" href="https://www.pkulaw.com/qikan/b20bd4ed093d5e7532c42de8fe79fb4fbdfb.html">
+                                                        <i class="c-icon arrow-blue-right-s"></i>全面建成小康社会的受教育权法治视角
+                                                    </a>
+
+                                            
+
+                                        </li>
+                        </ul>
+                </div>
+        <input id="hidNavAssociation" value="&lt;h3&gt;&lt;a href=&#39;#association_1&#39;&gt;法宝联想&lt;/a&gt;&lt;/h3&gt;&lt;dl&gt;&lt;dd&gt;&lt;a href=&#39;#association_1&#39;&gt;本案法律依据&lt;/a&gt;&lt;/dd&gt;&lt;dd&gt;&lt;a href=&#39;#association_2&#39;&gt;同案由重要案例&lt;/a&gt;&lt;/dd&gt;&lt;dd&gt;&lt;a href=&#39;#association_3&#39;&gt;本法院同类案例&lt;/a&gt;&lt;/dd&gt;&lt;dd&gt;&lt;a href=&#39;#association_4&#39;&gt;相关论文&lt;/a&gt;&lt;/dd&gt;&lt;/dl&gt;" type="hidden" />
+
+
+
+
+    </div>
+
+</body>
+</html>
