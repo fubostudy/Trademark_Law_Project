@@ -144,6 +144,7 @@ def subjects_list(word):
 def subject_word_list(word):
     word = word.replace("[\'\\r\\n\\r\\n                \',", '').replace("\\u3000\\u3000", '')
     word_list = []
+    word_list_true = []
     word_list = word.split('\',')
     word_list_true = word_list
     for i in range(0, len(word_list)):
@@ -164,25 +165,11 @@ def subject_word_list(word):
             continue
     word_list_true.insert(0, code)
     word_list_true.insert(1, word)
-    # print(word_list_true)
+    print(word_list_true)
+
 '''
 
 # needed
-# TODO 修改文件保存名称
-def save(film_content):
-    with open('../test_file/2013_test4_0825.csv', 'a+', newline='', encoding='gb18030') as f:
-        writer = csv.writer(f)
-        writer.writerow(film_content)
-    print('保存文件成功')
-
-# 循环遍历本地文件夹中的HTML
-def get_html():
-    path = 'html_2013'
-    all_html = os.listdir(path)
-    os.chdir(path)
-    return all_html
-
-
 def judge_first(text):
     # 落款中的审判长 judge_first
     judges_first = ''
@@ -285,8 +272,6 @@ def court_province_city(court):
             else:
                 city = '空'
                 province = '空'
-
-
         else:
             court_level = ''
             city = '空'
@@ -295,8 +280,98 @@ def court_province_city(court):
         pass
     return court_level, province, city
 
-# def yuangao_beiago(word):
+# TODO 原告被告提取函数
+# def yuangao_beigao_2(subject_text):
+#     subject_text = word.replace("[\'\\r\\n\\r\\n                \',", '').replace("\\u3000\\u3000", '')
+#     if(' \'原告：\', \'' in subject_text ):
+#         obj1 = re.compile(r"(?<= '原告：', ')(.+?)(?=',)", re.S)
+#         yuangao_list = obj1.findall(subject_text)
+#     elif("\'原告\', \'" in subject_text):
+#         obj1 = re.compile(r"(?<='原告', ')(.+?)(?=',)", re.S)
+#         yuangao_list = obj1.findall(subject_text)
+#     elif("\', \'原告：" in subject_text):
+#         obj1 = re.compile(r"(?<=', '原告：)(.+?)(?=',)", re.S)
+#         yuangao_list= obj1.findall(subject_text)
+#     elif("\', \'原告:" in subject_text):
+#         obj1 = re.compile(r"(?<=', '原告:)(.+?)(?=',)", re.S)
+#         yuangao_list= obj1.findall(subject_text)
+#     elif("\', \'原告" in subject_text):
+#         obj1 = re.compile(r"(?<=', '原告)(.+?)(?=',)", re.S)
+#         yuangao_list= obj1.findall(subject_text)
+#     # print(subject_text)
+#     # print("***"*40)
+#     # print(yuangao_list)
+#     if(' \'被告：\', \'' in subject_text ):
+#         obj1 = re.compile(r"(?<= '被告：', ')(.+?)(?=',)", re.S)
+#         beigao_list = obj1.findall(subject_text)
+#     elif("\'被告\', \'" in subject_text):
+#         obj1 = re.compile(r"(?<='被告', ')(.+?)(?=',)", re.S)
+#         beigao_list = obj1.findall(subject_text)
+#     elif("\', \'被告：" in subject_text):
+#         obj1 = re.compile(r"(?<=', '被告：)(.+?)(?=',)", re.S)
+#         beigao_list= obj1.findall(subject_text)
+#     elif("\', \'被告:" in subject_text):
+#         obj1 = re.compile(r"(?<=', '被告:)(.+?)(?=',)", re.S)
+#         beigao_list= obj1.findall(subject_text)
+#     elif("\', \'被告" in subject_text):
+#         obj1 = re.compile(r"(?<=', '被告)(.+?)(?=',)", re.S)
+#         beigao_list= obj1.findall(subject_text)
+#     return yuangao_list,beigao_list
 
+# TODO 1、原告被告提取函数
+def yuangao_beiago(html_res):
+    # 规则1
+    req_tiff_list = re.findall("原告：(.*?)\|\u3000\u3000", html_res)
+    # 规则2
+    if (not req_tiff_list):
+        req_tiff_list = re.findall("\|\u3000\u3000原告(.{1,30})\|\u3000\u3000", html_res)
+    # 规则3
+    if (not req_tiff_list):
+        req_tiff_list = re.findall("   \|\u3000\u3000原告(.*?)。\|\u3000\u3000", html_res)
+    # 规则4
+    if (not req_tiff_list):
+        req_tiff_list = re.findall("\|\u3000\u3000原告:(.*?)。\|", html_res)
+    # 规则5
+    if (not req_tiff_list):
+        req_tiff_list = re.findall("\|\u3000\u3000原告:(.*?)，\|", html_res)
+
+    # 规则1
+    res_target_list = re.findall("被告：(.*?)\|\u3000\u3000", html_res)
+    # 规则2
+    if (not res_target_list):
+        res_target_list = re.findall("\|\u3000\u3000被告(.{1,30})\|\u3000\u3000", html_res)
+    # 规则3
+    if (not res_target_list):
+        res_target_list = re.findall("   \|\u3000\u3000被告(.*?)。\|\u3000\u3000", html_res)
+    # 规则4
+    if (not res_target_list):
+        res_target_list = re.findall("\|\u3000\u3000被告:(.*?)。\|", html_res)
+    # 规则5
+    if (not res_target_list):
+        res_target_list = re.findall("\|\u3000\u3000被告:(.*?)，\|", html_res)
+
+    if (req_tiff_list and res_target_list):
+        print("匹配成功")
+        print("原告：", req_tiff_list, "被告：", res_target_list)
+        pass
+    else:
+        pass
+    return req_tiff_list,res_target_list
+    # return  ''.join(req_tiff_list),''.join(res_target_list)
+
+# 修改文件保存名称
+def save(film_content):
+    with open('../test_file/2019_test1_0826.csv', 'a+', newline='', encoding='gb18030') as f:
+        writer = csv.writer(f)
+        writer.writerow(film_content)
+    print('保存文件成功')
+
+# 循环遍历本地文件夹中的HTML
+def get_html():
+    path = 'html_2019'
+    all_html = os.listdir(path)
+    os.chdir(path)
+    return all_html
 
 # 全局变量
 items = []
@@ -307,8 +382,8 @@ all_html = get_html()
 for num_text, html in enumerate(all_html):
 
     # 定义所有用到的字段
-    # year = '2019' # TODO 修改年份2013/2019
-    year = '2013'  # TODO 修改年份2013/2019
+    year = '2019' # 修改年份2013/2019
+    # year = '2013'  # 修改年份2013/2019
     # code = '' #法宝引证码
     # title = '' #判决书名称
     # case_no = ''  #案号
@@ -337,11 +412,12 @@ for num_text, html in enumerate(all_html):
 
     text = '' #完整的正文文本
 
-    word = ''  # 当事人文本
+    word = ''  # 当事人文本-格式1
+    html_res = ''  # 当事人文本-格式2
     yuangao = ''  # 第1个原告
     beigao = ''  # 第1个被告
-    yuangao_list = []  # 原告列表
-    beigao_list = []  # 被告列表
+    yuangao_list = '' # 原告列表
+    beigao_list ='' #被告列表
 
     case_result = ''  # 判决结果文本
     shouli_fee = ''  # 受理费用
@@ -451,32 +527,43 @@ for num_text, html in enumerate(all_html):
                 keywords = "".join(contant).split()[1::]
                 keywords = ",".join(keywords)
 
+        if(proceeding == "一审" or proceeding == "简易程序"): #TODO 如果processing 是一审或者简易程序 就调用两个提取函数
 
-        # if(proceeding == '一审' or proceeding == '简易程序'):
+            # TODO 1、原告被告提取函数
+            '''
+            提取原告和被告信息，将关于当事人的变量提取成原告和被告两列（可能有多个被告，所以用list）
+            '''
+            # 获取文章主体
+            if (proceeding == "一审" or proceeding == "简易程序"):
+                # 获取文章主体
+                html_res = e.xpath('//div[@class="fulltext"]/text()')
+                html_res = '|'.join(html_res)
+                if (len(html_res) == 1):
+                    html_res = e.xpath('//div[@class="fulltext"]/p/text()')
+                yuangao_list, beigao_list = yuangao_beiago(html_res)
 
-        # TODO 原告被告提取函数
-
-        # TODO 审理费用提取函数
-
-        # # 经济赔偿损失，原告与被告负担情况
-        # obj_1 = re.compile(r"(?<=[一|二|三|四|五|六|七|八|九|十]、)(?=被告)(.+?)(?=[于本判决|应于本判决])", re.S).findall(case_result)
-        # if obj_1:
-        #     eco_fee_beigao = ''.join(str(obj_1[0])).replace("被告", '')
-        # obj_2 = re.compile(r"(?<=赔偿原告)(.+?)(?=经济损失)", re.S).findall(case_result)
-        # eco_fee_yuangao = ''.join(obj_2)
-        # obj_3 = re.compile(r"(?<=十日内赔偿原告)(.+?)(?=元)", re.S).findall(case_result)
-        # obj_4 = re.compile(r"\d+\.?\d*", re.S).findall(str(obj_3))
-        # eco_fee = ''.join(obj_4)
-
-        # 受理费
-        # shouli_fee_all = re.compile(r"(?<=[负担|承担|费|费用|计|共计|开支|支出|人民币])(\d+\.?\d*)[元|万]", re.S).findall(case_result)
+            # TODO 2、受理费提取函数
+            '''
+            提取关于审理费的相关信息，能直接有三个变量：审理费总额，原告负担金额，被告负担金额。[如果不能精确的提取，可以先把关于审理费的整句提取出来。]
+            '''
+            # # 经济赔偿损失，原告与被告负担情况
+            # obj_1 = re.compile(r"(?<=[一|二|三|四|五|六|七|八|九|十]、)(?=被告)(.+?)(?=[于本判决|应于本判决])", re.S).findall(case_result)
+            # if obj_1:
+            #     eco_fee_beigao = ''.join(str(obj_1[0])).replace("被告", '')
+            # obj_2 = re.compile(r"(?<=赔偿原告)(.+?)(?=经济损失)", re.S).findall(case_result)
+            # eco_fee_yuangao = ''.join(obj_2)
+            # obj_3 = re.compile(r"(?<=十日内赔偿原告)(.+?)(?=元)", re.S).findall(case_result)
+            # obj_4 = re.compile(r"\d+\.?\d*", re.S).findall(str(obj_3))
+            # eco_fee = ''.join(obj_4)`
+            # 受理费
+            # shouli_fee_all = re.compile(r"(?<=[负担|承担|费|费用|计|共计|开支|支出|人民币])(\d+\.?\d*)[元|万]", re.S).findall(case_result)
 
         # 保存字段
         item = [year, code, title, case_no, url,
                 case_reason, case_type, proceeding, instrument_type, keywords,
                 completion_date, start_date, judges, law_firms, legal_count, legal,
                 court, court_level, province, city,
-                text, word, yuangao, beigao, yuangao_list, beigao_list,
+                text, word, html_res,yuangao_list, beigao_list,
                 case_result, shouli_fee, fee_yuangao, fee_beigao]
         print(f"第{num_text + 1}个爬取成功,titile是{title}")
         save(item)
@@ -485,7 +572,7 @@ for num_text, html in enumerate(all_html):
                 case_reason, case_type, proceeding, instrument_type, keywords,
                 completion_date, start_date, judges, law_firms, legal_count, legal,
                 court, court_level, province, city,
-                text, word, yuangao, beigao, yuangao_list, beigao_list,
+                text, word, html_res,yuangao_list, beigao_list,
                 case_result, shouli_fee, fee_yuangao, fee_beigao]
         print(f"第{num_text + 1}个爬取成功,titile是{title}")
         save(item)
